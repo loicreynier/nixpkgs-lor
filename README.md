@@ -1,3 +1,3 @@
-# `nixpkgs-perso`
+# `nixpkgs-lor`
 
 Personal Nix package collection.

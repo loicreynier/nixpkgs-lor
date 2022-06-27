@@ -1,0 +1,4 @@
+nix
+packages
+nixpkgs
+nixpkgs-overlay
