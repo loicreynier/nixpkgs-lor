@@ -1,0 +1,29 @@
+From 5587efe52a20791993cdd05d957167e872d4a5e5 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Lo=C3=AFc=20Reynier?= <loic@loicreynier.fr>
+Date: Thu, 31 Mar 2022 17:18:25 +0200
+Subject: [PATCH] Add condition to `touch` database in `resolve_db`
+
+Prevent `touch $GOTO_DB` in `goto_resolve_db()` if the file already
+exists. This prevents a permission error while using `goto` in a
+Nix Home Manager user environment.
+---
+ goto.sh | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/goto.sh b/goto.sh
+index 4d52ccd..03d44aa 100644
+--- a/goto.sh
++++ b/goto.sh
+@@ -81,7 +81,9 @@ _goto_resolve_db()
+   if [[ ! -d "$GOTO_DB_CONFIG_DIRNAME" ]]; then
+     mkdir "$GOTO_DB_CONFIG_DIRNAME"
+   fi
+-  touch -a "$GOTO_DB"
++  if [[ ! -f "$GOTO_DB" ]]; then
++    touch -a "$GOTO_DB"
++  fi
+ }
+
+ _goto_usage()
+--
+2.35.1

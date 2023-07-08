@@ -1,0 +1,26 @@
+From d5077cf7660fc3d6384fd661c4c7cf1180c5ff93 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Lo=C3=AFc=20Reynier?= <loic@loicreynier.fr>
+Date: Tue, 30 Nov 2021 14:49:32 +0100
+Subject: [PATCH] Replace mv by command mv
+
+Replacing `mv` by `command mv` prevents using user's alias for `mv`
+like confirmation prompt or verbosity.
+---
+ goto.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/goto.sh b/goto.sh
+index 4d52ccd..f32a690 100644
+--- a/goto.sh
++++ b/goto.sh
+@@ -232,7 +232,7 @@ _goto_unregister_alias()
+   # shellcheck disable=SC2034
+   local readonly GOTO_DB_TMP="$HOME/.goto_"
+   # Delete entry from file.
+-  sed "/^$1 /d" "$GOTO_DB" > "$GOTO_DB_TMP" && mv "$GOTO_DB_TMP" "$GOTO_DB"
++  sed "/^$1 /d" "$GOTO_DB" > "$GOTO_DB_TMP" && command mv "$GOTO_DB_TMP" "$GOTO_DB"
+   echo "Alias '$1' unregistered successfully."
+ }
+
+--
+2.35.1
