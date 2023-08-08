@@ -29,7 +29,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `vimplugin-pantran.nvim-2023-06-05`
 - `vimplugin-persisted.nvim-2023-04-24`
 - `vimplugin-telescope-bibtex-nvim-2023-04-06`
-- `vimplugin-vscode.nvim-2023-08-08`
+- `vimplugin-vscode-nvim-2023-08-08`
 - `vimplugin-zone-nvim-2023-04-07`
 
 ## Installation
