@@ -22,7 +22,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.10-plm-0.2.2`: Command-line tool and library that managers your Python software licenses
 - `python3.10-py-machineid-0.3.0`: Library to get the unique machine ID of any host
 - `python3.10-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
-- `python3.10-x21-0.4.10`
+- `python3.10-x21-0.4.19`
 - `python3.10-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `src-cli-5.0.3`: Command line interface to Sourcegraph
 - `vimplugin-mkdnflow.nvim-2023-07-05`

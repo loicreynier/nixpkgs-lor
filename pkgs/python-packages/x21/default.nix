@@ -8,23 +8,28 @@
 let
   pyVerNoDot = builtins.replaceStrings [ "." ] [ "" ] python.pythonVersion;
 
-  version = "0.4.10";
+  version = "0.4.19";
 
   sources = {
+    "312" = {
+      name = "x21-0.4.19-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      url = "https://files.pythonhosted.org/packages/38/48/15c7457e9e070b5f54071dc7fe22a4610c62637ab875da136be1fec228d7/x21-0.4.19-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      sha256 = "sha256-rHyGWirrEBLYXGppZWJrCm9UXx/dVMFbTO61gaT29Do=";
+    };
     "311" = {
-      name = "x21-0.4.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
-      url = "https://files.pythonhosted.org/packages/a3/6a/5be6e22c89857d2671b52585afc1e4e6db03a1d90fe4c48a3426a0012753/x21-0.4.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
-      sha256 = "sha256-8wmEoQiyBnqgP1KHOuuYpPe49C03reuqsyRSa8hLkGY=";
+      name = "x21-0.4.19-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      url = "https://files.pythonhosted.org/packages/74/a4/e48981dc33a234b350aae0c99f2c8f284d4d877978cabb86d826a7f5494b/x21-0.4.19-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      sha256 = "sha256-h0Ff865dz76QTDxa2cBROxkxvYJuBeLx7Kx50UHW/4c=";
     };
     "310" = {
-      name = "x21-0.4.10-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
-      url = "https://files.pythonhosted.org/packages/70/57/a5c48395c7c107a7d6717e4d81e2645384d24710935e85520452c2950bf6/x21-0.4.10-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
-      sha256 = "sha256-o8w9jwQKZ0wxfZ8GoDxz0Bp2BptpbGFLkzmgYESo7/o=";
+      name = "x21-0.4.19-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      url = "https://files.pythonhosted.org/packages/7e/95/055eee7fd587dd6ed70befdb9faa3d1af7730d45c5343f393e2c1da82697/x21-0.4.19-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      sha256 = "sha256-kwvHzdSrZEBzd2fGhDGQjyc+raLh3/t9Kyuk0Qd4LeI=";
     };
     "39" = {
-      name = "x21-0.4.10-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
-      url = "https://files.pythonhosted.org/packages/59/d0/0e37b135fe42c7e6738b694325dea847baf3fa19eead31f48476803ce186/x21-0.4.10-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
-      sha256 = "sha256-XbjEtvbY6y6JGIZk4pWO69YQV6Ziyxv6yKaBAfy1bZ0=";
+      name = "x21-0.4.19-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      url = "https://files.pythonhosted.org/packages/d3/07/c2278e17d37f0a80bafd79d27c89a023744ae706635690563f855faff953/x21-0.4.19-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl";
+      sha256 = "sha256-Kh/4V56XOuAzG/nTkMibY/RLINCkE2ol9wou+7GBtq8=";
     };
   };
 in
