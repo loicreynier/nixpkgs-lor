@@ -14,7 +14,7 @@
 
 buildPythonPackage rec {
   pname = "betterbib";
-  version = "5.0.5";
+  version = "5.0.11";
   format = "wheel";
 
   meta = with lib; {
@@ -29,7 +29,7 @@ buildPythonPackage rec {
     inherit pname version format;
     python = "py3";
     dist = "py3";
-    sha256 = "sha256-6wX0J/5FTpMRLpJsz9sQy4Tul2sXtq3KF3Vyc02dxy4=";
+    sha256 = "sha256-3Tr0D2RWGI5mis9qJY4Gl1scvfwtW1my2daGprFfaDU=";
   };
 
   propagatedBuildInputs = [

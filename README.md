@@ -17,7 +17,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `foxmarks-1.0.2`: CLI read-only interface for Mozilla Firefox's bookmarks
 - `gen-license-0.1.2`: Interactive command-line tool for generating license files
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
-- `python3.10-betterbib-5.0.5`: Tool to update BibTeX files with info from online resources.
+- `python3.10-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
 - `python3.10-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
 - `python3.10-plm-0.2.2`: Command-line tool and library that managers your Python software licenses
 - `python3.10-py-machineid-0.3.0`: Library to get the unique machine ID of any host
