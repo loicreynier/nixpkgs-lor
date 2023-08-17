@@ -6,7 +6,7 @@
 
 buildPythonPackage rec {
   pname = "py-machineid";
-  version = "0.3.0";
+  version = "0.4.3";
 
   meta = with lib; {
     description = "Library to get the unique machine ID of any host";
@@ -16,7 +16,7 @@ buildPythonPackage rec {
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "sha256-inllqAZ7lelZh1DZp1uQqc7s42xSJW+x5BGOL8mIBxY=";
+    sha256 = "sha256-g0s9LJSn9q7otsTK8Q6773HKK/HO+IPFN5vCIYYSStI=";
   };
 
   propagatedBuildInputs = [
