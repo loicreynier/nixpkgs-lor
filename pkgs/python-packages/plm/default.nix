@@ -16,7 +16,7 @@
 
 buildPythonPackage rec {
   pname = "plm";
-  version = "0.2.2";
+  version = "0.2.11";
   format = "wheel";
 
   meta = with lib; {
@@ -31,7 +31,7 @@ buildPythonPackage rec {
     pname = "python_license_manager";
     python = "py3";
     dist = "py3";
-    sha256 = "sha256-//3ZmkZONffdBGvN9J1I1Wn7jYE+1sFW/4eZV0v+n7w=";
+    sha256 = "sha256-uTNKFB6jYCvDp8Th7KSst+2ISl3KYzPeJy2PPItW5eo=";
   };
 
   propagatedBuildInputs = [
