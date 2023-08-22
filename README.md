@@ -25,6 +25,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.10-x21-0.4.19`
 - `python3.10-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `src-cli-5.0.3`: Command line interface to Sourcegraph
+- `vimplugin-duck-nvim-2023-07-08`
 - `vimplugin-mkdnflow.nvim-2023-07-05`
 - `vimplugin-pantran-nvim-2023-06-05`
 - `vimplugin-persisted.nvim-2023-04-24`

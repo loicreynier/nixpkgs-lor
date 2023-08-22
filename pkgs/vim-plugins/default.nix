@@ -2,6 +2,7 @@
 
 with pkgs;
 {
+  duck-nvim = callPackage ./duck-nvim { };
   mkdnflow-nvim = callPackage ./mkdnflow-nvim { };
   pantran-nvim = callPackage ./pantran-nvim { };
   persisted-nvim = callPackage ./persisted-nvim { };
