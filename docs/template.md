@@ -19,7 +19,7 @@ The subsequent packages are no longer being maintained within this repository.
 The last updated derivation of these packages
 can be found in the `./pkgs-old` folder.
 
-- [`src-cli`]: available in [`nixpkgs/unstable`][src-cli]
+- `src-cli`: available in [`nixpkgs/unstable`][src-cli]
 
 ## Installation
 
