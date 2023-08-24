@@ -4,8 +4,8 @@ Personal Nix package collection.
 
 ## About
 
-This is a personal collection of Nix packages that I will pull (or have pulled)
-to [`nixpkgs`][nixpkgs].
+This is a personal collection of Nix packages that
+I will pull (or have pulled) to [`nixpkgs`][nixpkgs].
 I use this Flake to install packages to my environments
 until they are available on `nixpkgs` or until they are properly packaged.
 
@@ -24,7 +24,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.10-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
 - `python3.10-x21-0.4.19`
 - `python3.10-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
-- `src-cli-5.1.2`: Command line interface to Sourcegraph
 - `vimplugin-duck-nvim-2023-07-08`
 - `vimplugin-mkdnflow.nvim-2023-07-05`
 - `vimplugin-pantran-nvim-2023-06-05`
@@ -32,6 +31,12 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `vimplugin-telescope-bibtex-nvim-2023-04-06`
 - `vimplugin-vscode-nvim-2023-08-08`
 - `vimplugin-zone-nvim-2023-04-07`
+
+The subsequent packages are no longer being maintained within this repository.
+The last updated derivation of these packages
+can be found in the `./pkgs-old` folder.
+
+- [`src-cli`]: available in [`nixpkgs/unstable`][src-cli]
 
 ## Installation
 
@@ -46,3 +51,5 @@ pkgs = import nixpkgs {
   ];
 };
 ```
+
+[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/misc/src-cli/default.nix

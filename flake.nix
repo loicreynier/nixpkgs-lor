@@ -80,7 +80,7 @@
 
             alejandra = {
               enable = true;
-              excludes = ["pkgs/"];
+              excludes = ["pkgs/" "pkgs.old/"];
             };
             black.enable = true;
             commitizen.enable = true;

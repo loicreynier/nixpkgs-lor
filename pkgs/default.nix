@@ -6,5 +6,4 @@ with pkgs;
   foxmarks = callPackage ./foxmarks { };
   gen-license = callPackage ./gen-license { };
   goto = callPackage ./goto { };
-  src-cli = callPackage ./src-cli { };
 }
