@@ -5,7 +5,7 @@
 
 buildGoModule rec {
   pname = "src-cli";
-  version = "5.0.3";
+  version = "5.1.2";
   src = fetchFromGitHub {
     owner = "sourcegraph";
     repo = "src-cli";
