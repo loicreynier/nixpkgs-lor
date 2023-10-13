@@ -26,7 +26,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.10-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `vimplugin-duck-nvim-2023-07-08`
 - `vimplugin-pantran-nvim-2023-06-05`
-- `vimplugin-persisted.nvim-2023-04-24`
+- `vimplugin-persisted.nvim-2023-08-11`
 - `vimplugin-telescope-bibtex-nvim-2023-04-06`
 - `vimplugin-vscode-nvim-2023-08-08`
 - `vimplugin-zone-nvim-2023-04-07`
