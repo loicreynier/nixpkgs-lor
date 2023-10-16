@@ -2,16 +2,16 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "foxmarks";
-  version = "1.0.2";
+  version = "2.0.0beta.0";
 
   src = fetchFromGitHub {
     owner = "zer0-x";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-QoFQdlG5VHJf7BIwH5dtYsf97bfRlKRyXpoFgsqLiuo=";
+    sha256 = "sha256-HWhsEljMs0qhA6nmCvz59Ub3PRZzKAUzCuRxpVPr8J0=";
   };
 
-  cargoSha256 = "sha256-S/LnyMKp5eWG9z5shpb/kq80vytYAfuAzTDPxwdupy8=";
+  cargoSha256 = "sha256-hDfTEHDxzPpjSQWCHNKEiD+KXcHhiesv2qMTntPC09Q=";
 
   buildInputs = [
     sqlite
