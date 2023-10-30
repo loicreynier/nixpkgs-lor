@@ -19,6 +19,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
 - `python3.10-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
 - `python3.10-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
+- `python3.10-pdfrw2-0.5.0`: Pure Python library that reads and writes PDFs
 - `python3.10-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
 - `python3.10-py-machineid-0.4.4`: Library to get the unique machine ID of any host
 - `python3.10-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
