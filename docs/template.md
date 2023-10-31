@@ -13,7 +13,11 @@ until they are available on `nixpkgs` or until they are properly packaged.
 
 ## Package list
 
+<!-- editorconfig-checker-disable -->
+
 {{package_list}}
+
+<!-- editorconfig-checker-enable -->
 
 The subsequent packages are no longer being maintained within this repository.
 The last updated derivation of these packages
@@ -21,6 +25,13 @@ can be found in the `./pkgs-old` folder.
 
 - `src-cli`: available in [`nixpkgs/unstable`][src-cli]
 - `mkdnflow-nvim`: available in [`nixpkgs/unstable`][mkdnflow-nvim]
+
+<!-- editorconfig-checker-disable -->
+
+[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/misc/src-cli/default.nix
+[mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/5e4c2ada4fcd54b99d56d7bd62f384511a7e2593/pkgs/applications/editors/vim/plugins/generated.nix#L5570
+
+<!-- editorconfig-checker-enable -->
 
 ## Installation
 
@@ -35,6 +46,3 @@ pkgs = import nixpkgs {
   ];
 };
 ```
-
-[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/misc/src-cli/default.nix
-[mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/5e4c2ada4fcd54b99d56d7bd62f384511a7e2593/pkgs/applications/editors/vim/plugins/generated.nix#L5570
