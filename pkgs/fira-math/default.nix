@@ -9,7 +9,7 @@ stdenv.mkDerivation {
 
   src = fetchurl {
     url = "https://github.com/firamath/firamath/releases/download/v${version}/FiraMath-Regular.otf";
-    sha256 = "sha256-ICjL091NjAzxYIUg60dZlWqDpnkx17bY58MTUgGG41s=";
+    hash = "sha256-ICjL091NjAzxYIUg60dZlWqDpnkx17bY58MTUgGG41s=";
     name = "FiraMath-Regular.otf";
   };
 

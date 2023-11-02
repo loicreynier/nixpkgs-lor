@@ -31,7 +31,7 @@ buildPythonPackage rec {
     pname = "python_license_manager";
     python = "py3";
     dist = "py3";
-    sha256 = "sha256-uTNKFB6jYCvDp8Th7KSst+2ISl3KYzPeJy2PPItW5eo=";
+    hash = "sha256-uTNKFB6jYCvDp8Th7KSst+2ISl3KYzPeJy2PPItW5eo=";
   };
 
   propagatedBuildInputs = [

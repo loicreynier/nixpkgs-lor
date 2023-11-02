@@ -29,7 +29,7 @@ buildPythonPackage rec {
     inherit pname version format;
     python = "py3";
     dist = "py3";
-    sha256 = "sha256-3Tr0D2RWGI5mis9qJY4Gl1scvfwtW1my2daGprFfaDU=";
+    hash = "sha256-3Tr0D2RWGI5mis9qJY4Gl1scvfwtW1my2daGprFfaDU=";
   };
 
   propagatedBuildInputs = [

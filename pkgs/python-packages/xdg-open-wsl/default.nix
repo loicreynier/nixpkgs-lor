@@ -24,7 +24,7 @@ buildPythonPackage rec {
     owner = "cpbotha";
     repo = pname;
     rev = "7d40d572d0274db4b668b5d42797ebd3d8e16885";
-    sha256 = "sha256-Etfrp0KWieK933fZP8KDUClnLUyiMxl2G58KpN18DPk=";
+    hash = "sha256-Etfrp0KWieK933fZP8KDUClnLUyiMxl2G58KpN18DPk=";
   };
 
   nativeBuildInputs = [

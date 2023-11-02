@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
     owner = "iridakos";
     repo = pname;
     rev = "refs/tags/v${version}";
-    sha256 = "sha256-7/fEa5jXKbTwzyHhvpp8yuoo70DdlX1AxidYuc1PjV0=";
+    hash = "sha256-7/fEa5jXKbTwzyHhvpp8yuoo70DdlX1AxidYuc1PjV0=";
   };
 
   patchFlags = [ "-F3" ];
