@@ -19,14 +19,14 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `foxmarks-2.0.0beta.0`: CLI read-only interface for Mozilla Firefox's bookmarks
 - `gen-license-0.1.2`: Interactive command-line tool for generating license files
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
-- `python3.10-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
-- `python3.10-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
-- `python3.10-pdfrw2-0.5.0`: Pure Python library that reads and writes PDFs
-- `python3.10-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
-- `python3.10-py-machineid-0.4.6`: Library to get the unique machine ID of any host
-- `python3.10-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
-- `python3.10-x21-0.4.19`
-- `python3.10-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
+- `python3.11-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
+- `python3.11-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
+- `python3.11-pdfrw2-0.5.0`: Pure Python library that reads and writes PDFs
+- `python3.11-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
+- `python3.11-py-machineid-0.4.6`: Library to get the unique machine ID of any host
+- `python3.11-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
+- `python3.11-x21-0.4.19`
+- `python3.11-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `vimplugin-duck-nvim-2023-07-08`
 - `vimplugin-neocolumn-nvim-2023-10-17`
 - `vimplugin-pantran-nvim-2023-06-05`

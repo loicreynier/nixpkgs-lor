@@ -91,7 +91,10 @@
               excludes = ["flake\.nix"];
             };
             ruff.enable = true;
-            prettier.enable = true;
+            prettier = {
+              enable = true;
+              excludes = ["flake\.lock"];
+            };
             statix.enable = true;
             typos.enable = true;
           };
