@@ -1,13 +1,13 @@
 { fetchFromGitHub, vimUtils }:
 
-vimUtils.buildVimPluginFrom2Nix {
+vimUtils.buildVimPlugin rec {
   pname = "duck-nvim";
-  version = "2023-07-08";
+  version = "1.0.0";
   src = fetchFromGitHub {
     owner = "tamton-aquib";
     repo = "duck.nvim";
-    rev = "8f18dd79c701698fc150119ef642c1881ce6a538";
-    hash = "sha256-YPZF57FsN1Zr8S2R2hKIX9xO0w8kbNs8zdLjm6hpynI=";
+    rev = "v${version}";
+    hash = "sha256-G3n3viqsqlZ4Lo3jQY7cfEw7DmCKTCoxL4mvBBujOP0=";
   };
   meta.homepage = "https://github.com/tamton-aquib/duck.nvim";
 }
