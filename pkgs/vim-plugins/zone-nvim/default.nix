@@ -1,6 +1,6 @@
 { fetchFromGitHub, vimUtils }:
 
-vimUtils.buildVimPluginFrom2Nix {
+vimUtils.buildVimPlugin {
   pname = "zone-nvim";
   version = "2023-04-07";
   src = fetchFromGitHub {

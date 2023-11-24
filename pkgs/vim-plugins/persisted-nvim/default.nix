@@ -1,6 +1,6 @@
 { fetchFromGitHub, vimUtils }:
 
-vimUtils.buildVimPluginFrom2Nix {
+vimUtils.buildVimPlugin {
   pname = "persisted.nvim";
   version = "2023-08-11";
   src = fetchFromGitHub {

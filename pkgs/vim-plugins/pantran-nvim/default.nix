@@ -1,6 +1,6 @@
 { fetchFromGitHub, vimUtils }:
 
-vimUtils.buildVimPluginFrom2Nix {
+vimUtils.buildVimPlugin {
   pname = "pantran-nvim";
   version = "2023-06-05";
   src = fetchFromGitHub {

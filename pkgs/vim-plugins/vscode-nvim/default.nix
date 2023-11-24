@@ -1,6 +1,6 @@
 { fetchFromGitHub, vimUtils }:
 
-vimUtils.buildVimPluginFrom2Nix {
+vimUtils.buildVimPlugin {
   pname = "vscode-nvim";
   version = "2023-10-17";
   src = fetchFromGitHub {

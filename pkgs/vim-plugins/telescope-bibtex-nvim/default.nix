@@ -1,6 +1,6 @@
 { fetchFromGitHub, vimUtils }:
 
-vimUtils.buildVimPluginFrom2Nix rec {
+vimUtils.buildVimPlugin rec {
   pname = "telescope-bibtex-nvim";
   version = "2023-11-16";
   src = fetchFromGitHub {
