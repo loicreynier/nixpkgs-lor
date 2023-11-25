@@ -4,6 +4,7 @@
 , numpy
 , pythonOlder
 , setuptools
+, setuptools-scm
 , scipy
 }:
 
@@ -29,6 +30,7 @@ buildPythonPackage rec {
   nativeBuildInputs = [
     numpy
     setuptools
+    setuptools-scm
     scipy
   ];
 
