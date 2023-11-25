@@ -6,4 +6,10 @@ make-readme:
 build-all:
     nix flake show --json \
         | jq '.packages."x86_64-linux"|keys[]' \
+        | xargs -I {} nix build .#{}
+
+# Rebuild all packages
+rebuild-all:
+    nix flake show --json \
+        | jq '.packages."x86_64-linux"|keys[]' \
         | xargs -I {} nix build --rebuild .#{}
