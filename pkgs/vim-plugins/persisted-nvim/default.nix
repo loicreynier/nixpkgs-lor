@@ -2,12 +2,12 @@
 
 vimUtils.buildVimPlugin {
   pname = "persisted.nvim";
-  version = "2023-08-11";
+  version = "2023-11-26";
   src = fetchFromGitHub {
     owner = "olimorris";
     repo = "persisted.nvim";
-    rev = "315cd1a8a501ca8e0c1d55f0c245b9cc0e1ffa01";
-    hash = "sha256-xmHNjvLooWCcOm0ewCUg4pwarbjyneb39oWjLW0rL7g=";
+    rev = "fc9f398393cc3bb0e4e81cb9f7c133cd2b21467f";
+    hash = "sha256-x/Em3BsiOgNVcmeEBbRPWI3SfxZ7VMZKrTJtUhHuzrI=";
   };
   meta.homepage = "https://github.com/olimorris/persisted.nvim";
 }
