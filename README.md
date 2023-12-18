@@ -16,6 +16,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 <!-- editorconfig-checker-disable -->
 
 - `fira-math-0.3.4`: Math font with Unicode math support based on FiraSans and FiraGO
+- `fira-math-next-unstable-2023-10-09`: Math font with Unicode math support based on FiraSans and FiraGO
 - `foxmarks-2.0.3`: CLI read-only interface for Mozilla Firefox's bookmarks
 - `gen-license-0.1.2`: Interactive command-line tool for generating license files
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
