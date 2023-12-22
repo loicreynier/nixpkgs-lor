@@ -42,14 +42,14 @@ The last updated derivation of these packages
 can be found in the `./pkgs-old` folder.
 
 - `gen-license`: available in [`nixpkgs/unstable`][gen-license]
-- `mkdnflow-nvim`: available in [`nixpkgs/unstable`][mkdnflow-nvim]
-- `src-cli`: available in [`nixpkgs/unstable`][src-cli]
+- `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
+- `src-cli`: available in [`nixpkgs`][src-cli]
 
 <!-- editorconfig-checker-disable -->
 
 [gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/gen-license/default.nix
-[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/misc/src-cli/default.nix
-[mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/5e4c2ada4fcd54b99d56d7bd62f384511a7e2593/pkgs/applications/editors/vim/plugins/generated.nix#L5570
+[mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
+[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/misc/src-cli/default.nix
 
 <!-- editorconfig-checker-enable -->
 
