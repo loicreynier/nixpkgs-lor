@@ -18,7 +18,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `fira-math-0.3.4`: Math font with Unicode math support based on FiraSans and FiraGO
 - `fira-math-next-unstable-2023-10-09`: Math font with Unicode math support based on FiraSans and FiraGO
 - `foxmarks-2.0.3`: CLI read-only interface for Mozilla Firefox's bookmarks
-- `gen-license-0.1.2`: Interactive command-line tool for generating license files
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
 - `python3.11-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
 - `python3.11-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
@@ -42,11 +41,13 @@ The subsequent packages are no longer being maintained within this repository.
 The last updated derivation of these packages
 can be found in the `./pkgs-old` folder.
 
-- `src-cli`: available in [`nixpkgs/unstable`][src-cli]
+- `gen-license`: available in [`nixpkgs/unstable`][gen-license]
 - `mkdnflow-nvim`: available in [`nixpkgs/unstable`][mkdnflow-nvim]
+- `src-cli`: available in [`nixpkgs/unstable`][src-cli]
 
 <!-- editorconfig-checker-disable -->
 
+[gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/gen-license/default.nix
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/misc/src-cli/default.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/5e4c2ada4fcd54b99d56d7bd62f384511a7e2593/pkgs/applications/editors/vim/plugins/generated.nix#L5570
 
