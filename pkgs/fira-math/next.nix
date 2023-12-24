@@ -27,6 +27,6 @@ fira-math.overrideAttrs (oldAttrs: {
   '';
 
   installPhase = ''
-    install -D "build/FiraMath-Regular.otf" -t "$out/share/fonts/opentype/"
+    install -D "build/"*.otf -t "$out/share/fonts/opentype/"
   '';
 })
