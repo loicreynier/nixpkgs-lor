@@ -28,11 +28,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.11-x21-0.4.19`
 - `python3.11-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `vimplugin-duck-nvim-1.0.0`
-- `vimplugin-neocolumn-nvim-2023-10-17`
-- `vimplugin-pantran-nvim-2023-06-05`
-- `vimplugin-persisted.nvim-2023-11-26`
-- `vimplugin-telescope-bibtex-nvim-2023-11-16`
-- `vimplugin-vscode-nvim-2023-12-21`
 - `vimplugin-zone-nvim-2023-04-07`
 
 <!-- editorconfig-checker-enable -->
@@ -45,11 +40,17 @@ can be found in the `./pkgs-old` folder.
 - `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
 - `src-cli`: available in [`nixpkgs`][src-cli]
 
+The others Neovim packages that were removed
+are available in [NixNeovimPlugins].
+This overlay automatically provides all plugins from [awesome-neovim].
+
 <!-- editorconfig-checker-disable -->
 
 [gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/gen-license/default.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/misc/src-cli/default.nix
+[NixNeovimPlugins]: https://github.com/NixNeovim/NixNeovimPlugins
+[awesome-neovim]: https://github.com/rockerBOO/awesome-neovim
 
 <!-- editorconfig-checker-enable -->
 
