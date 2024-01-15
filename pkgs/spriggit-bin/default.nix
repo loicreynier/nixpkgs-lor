@@ -1,14 +1,14 @@
 { fetchurl, lib, makeWrapper, stdenv, unzip }:
 let
   pname = "spriggit-bin";
-  version = "0.15";
+  version = "0.16";
 in
 stdenv.mkDerivation {
   inherit pname version;
 
   src = fetchurl {
     url = "https://github.com/Mutagen-Modding/Spriggit/releases/download/${version}/SpriggitLinuxCLI.zip";
-    hash = "sha256-F9ODw5MPrzzpHtmSjQwGNo4CLzOsum2Gb7KbGgLrm20=";
+    hash = "sha256-FqsDAhed3JWKA6J8PdGDugY6MBCTmwmgELiSp6nqql4=";
   };
 
   dontUnpack = true;
