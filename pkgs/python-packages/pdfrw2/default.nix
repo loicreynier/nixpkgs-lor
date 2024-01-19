@@ -1,17 +1,33 @@
-{ lib, buildPythonPackage, fetchPypi }:
+{ lib
+, buildPythonPackage
+, fetchPypi
+, pillow
+, pycryptodome
+, reportlab
+, setuptools
+}:
 
 buildPythonPackage rec {
   pname = "pdfrw2";
   version = "0.5.0";
+  pyproject = true;
 
   src = fetchPypi {
     inherit pname version;
     hash = "sha256-5qnMq4Pnaaeov+Lb3fD0ndfr5SAy6SlXTwG7v6IZce0=";
   };
 
-  # Some tests rely on Python 2 and requires the extra download of:
-  # `github.com/pmaupin/static_pdfs`
-  doCheck = false;
+  nativeBuildInputs = [
+    setuptools
+  ];
+
+  propagatedBuildInputs = [
+    pillow
+    reportlab
+    pycryptodome
+  ];
+
+  pythonImportCheck = [ "pdfrw" ];
 
   meta = with lib; {
     description = "Pure Python library that reads and writes PDFs";
