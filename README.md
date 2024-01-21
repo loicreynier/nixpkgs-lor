@@ -15,8 +15,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 
 <!-- editorconfig-checker-disable -->
 
-- `fira-math-0.3.4`: Math font with Unicode math support based on FiraSans and FiraGO
-- `fira-math-next-unstable-2023-10-09`: Math font with Unicode math support based on FiraSans and FiraGO
 - `foxmarks-2.0.3`: CLI read-only interface for Mozilla Firefox's bookmarks
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
 - `python3.11-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
@@ -37,6 +35,7 @@ The subsequent packages are no longer being maintained within this repository.
 The last updated derivation of these packages
 can be found in the `./pkgs-old` folder.
 
+- `fira-math`: available in [`nixpkgs-unstable`][fira-math]
 - `gen-license`: available in [`nixpkgs/unstable`][gen-license]
 - `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
 - `src-cli`: available in [`nixpkgs`][src-cli]
@@ -47,6 +46,7 @@ This overlay automatically provides all plugins from [awesome-neovim].
 
 <!-- editorconfig-checker-disable -->
 
+[fira-math]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/fi/fira-math/package.nix
 [gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/tools/gen-license/default.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/misc/src-cli/default.nix
