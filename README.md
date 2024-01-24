@@ -46,6 +46,7 @@ This overlay automatically provides all plugins from [awesome-neovim].
 
 <!-- editorconfig-checker-disable -->
 
+[pdfrw2]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/pdfrw2/default.nix
 [fira-math]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/fi/fira-math/package.nix
 [gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/gen-license/default.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
