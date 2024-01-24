@@ -26,6 +26,7 @@ can be found in the `./pkgs-old` folder.
 - `fira-math`: available in [`nixpkgs/unstable`][fira-math]
 - `gen-license`: available in [`nixpkgs`][gen-license]
 - `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
+- `pdfrw2`: available in [`nixpkgs/unstable`][pdfrw2]
 - `src-cli`: available in [`nixpkgs`][src-cli]
 
 The others Neovim packages that were removed

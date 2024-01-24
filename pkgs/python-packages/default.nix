@@ -4,7 +4,6 @@ with python;
 {
   betterbib = callPackage ./betterbib { };
   dmsuite = callPackage ./dmsuite { };
-  pdfrw2 = callPackage ./pdfrw2 { };
   plm = callPackage ./plm { };
   py-machineid = callPackage ./py-machineid { };
   x21 = callPackage ./x21 { };
