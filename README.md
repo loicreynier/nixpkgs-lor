@@ -17,6 +17,8 @@ until they are available on `nixpkgs` or until they are properly packaged.
 
 - `foxmarks-2.0.3`: CLI read-only interface for Mozilla Firefox's bookmarks
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
+- `pinentry-wsl-ps1-0.2-unstable-2022-09-04`: GUI for GPG within Windows Subsystem for Linux
+- `pinentry-wsl-ps1-wsl2-0.2-unstable-2023-03-10`: GUI for GPG within Windows Subsystem for Linux
 - `python3.11-betterbib-5.0.11`: Tool to update BibTeX files with info from online resources.
 - `python3.11-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
 - `python3.11-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
