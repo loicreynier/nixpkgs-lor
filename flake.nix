@@ -106,6 +106,7 @@
           findutils # xargs
           just
           jq
+          nixpkgs-fmt
           ruff
           pythonEnv
         ];
