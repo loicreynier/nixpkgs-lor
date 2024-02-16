@@ -30,7 +30,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `spriggit-bin-0.16`: Tool to facilitate converting Bethesda plugin files to a text based format that can be stored in Git
 - `vimplugin-duck-nvim-1.0.0`
 - `vimplugin-zone-nvim-2023-04-07`
-- `win32yank-0.1.1`: Windows clipboard tool
+- `win32yank-bin-0.1.1`: Windows clipboard tool
 
 <!-- editorconfig-checker-enable -->
 

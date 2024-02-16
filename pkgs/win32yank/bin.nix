@@ -1,7 +1,7 @@
 { stdenv, fetchzip, lib }:
 
 stdenv.mkDerivation rec {
-  pname = "win32yank";
+  pname = "win32yank-bin";
   version = "0.1.1";
 
   src = fetchzip {
