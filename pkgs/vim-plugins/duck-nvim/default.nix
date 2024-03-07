@@ -4,12 +4,12 @@
 }:
 vimUtils.buildVimPlugin {
   pname = "duck-nvim";
-  version = "1.0.0-unstable-2024-02-27";
+  version = "1.0.0-unstable-2024-03-07";
   src = fetchFromGitHub {
     owner = "tamton-aquib";
     repo = "duck.nvim";
-    rev = "0ca969d549f5d546ae395e163130024b51694235";
-    hash = "sha256-meATA9jsIrRUAZ+5PkznR8RADAC3KbmTHaG4p0oietw=";
+    rev = "d8a6b08af440e5a0e2b3b357e2f78bb1883272cd";
+    hash = "sha256-97QSkZHpHLq1XyLNhPz88i9VuWy6ux7ZFNJx/g44K2A=";
   };
   meta.homepage = "https://github.com/tamton-aquib/duck.nvim";
 }
