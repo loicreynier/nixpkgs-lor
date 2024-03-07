@@ -2,6 +2,13 @@
 make-readme:
     python3 ./docs/make_readme.py
 
+# Update and rebuild all packages (for testing)
+update: update-inputs rebuild-all
+
+# Update flake's inputs
+update-inputs:
+    nix flake update
+
 # Build all packages
 build-all:
     nix flake show --json \
