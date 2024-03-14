@@ -10,41 +10,43 @@
     };
   };
 
-  outputs = {
-    self,
-    flake-utils,
-    nixpkgs,
-    pre-commit-hooks,
-  }:
+  outputs =
+    { self
+    , flake-utils
+    , nixpkgs
+    , pre-commit-hooks
+    }:
     {
       overlays.default = nixpkgs.lib.composeManyExtensions [
         (final: prev:
           {
             pythonPackagesOverlays =
-              (prev.pythonPackagesOverlays or [])
+              (prev.pythonPackagesOverlays or [ ])
               ++ [
                 (python-final: _:
-                  {}
-                  // import ./pkgs/python-packages {python = python-final;})
+                  { }
+                  // import ./pkgs/python-packages { python = python-final; })
               ];
-            python3 = let
-              self = prev.python3.override {
-                inherit self;
-                packageOverrides =
-                  prev.lib.composeManyExtensions final.pythonPackagesOverlays;
-              };
-            in
+            python3 =
+              let
+                self = prev.python3.override {
+                  inherit self;
+                  packageOverrides =
+                    prev.lib.composeManyExtensions final.pythonPackagesOverlays;
+                };
+              in
               self;
             python3Packages = final.python3.pkgs;
-            vimPlugins = prev.vimPlugins // import ./pkgs/vim-plugins {pkgs = final;};
+            vimPlugins = prev.vimPlugins // import ./pkgs/vim-plugins { pkgs = final; };
           }
-          // import ./pkgs {pkgs = final;})
+          // import ./pkgs { pkgs = final; })
       ];
     }
-    // (flake-utils.lib.eachDefaultSystem (system: let
+    // (flake-utils.lib.eachDefaultSystem (system:
+    let
       pkgs = import nixpkgs {
         inherit system;
-        overlays = [self.overlays.default];
+        overlays = [ self.overlays.default ];
         config.allowUnfreePredicate = pkg:
           builtins.elem (nixpkgs.lib.getName pkg) [
             "betterbib"
@@ -57,18 +59,19 @@
           black
           jinja2
         ]);
-    in {
+    in
+    {
       packages =
-        {}
-        // import ./pkgs {inherit pkgs;}
-        // import ./pkgs/python-packages {python = pkgs.python3Packages;}
-        // import ./pkgs/vim-plugins {inherit pkgs;};
+        { }
+        // import ./pkgs { inherit pkgs; }
+        // import ./pkgs/python-packages { python = pkgs.python3Packages; }
+        // import ./pkgs/vim-plugins { inherit pkgs; };
 
       checks = {
         pre-commit-check = pre-commit-hooks.lib.${system}.run {
           src = ./.;
 
-          hooks = with pkgs; {
+          hooks = {
             make_readme = {
               enable = true;
               name = "make-readme";
@@ -78,22 +81,17 @@
               pass_filenames = false;
             };
 
-            alejandra = {
-              enable = true;
-              excludes = ["pkgs/" "pkgs.old/"];
-            };
-            black.enable = true;
             commitizen.enable = true;
             deadnix.enable = true;
-            editorconfig-checker.enable = true;
-            nixpkgs-fmt = {
+            editorconfig-checker = {
               enable = true;
-              excludes = ["flake\.nix"];
+              excludes = [ "flake\.lock" ];
             };
+            nixpkgs-fmt.enable = true;
             ruff.enable = true;
             prettier = {
               enable = true;
-              excludes = ["flake\.lock"];
+              excludes = [ "flake\.lock" ];
             };
             statix.enable = true;
             typos.enable = true;
@@ -107,7 +105,6 @@
           just
           jq
           nixpkgs-fmt
-          ruff
           pythonEnv
         ];
         inherit (self.checks.${system}.pre-commit-check) shellHook;
