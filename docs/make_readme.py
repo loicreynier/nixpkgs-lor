@@ -2,8 +2,11 @@
 
 """Script to generate the `README.md`"""
 
-__author__ = ["Loïc Reynier <loic@loicreynier.fr>"]
-__version__ = "0.1.0"
+__author__ = ["Loïc Reynier <loic+dev@loicreynier.fr>"]
+__version__ = "0.1.1"
+__changelog__ = {
+    "0.1.1": "Raise error if description ends with a period",
+}
 
 import json
 import os
@@ -30,11 +33,17 @@ def package_list(packages: dict) -> str:
     list_ = []
     # Generate list
     for _, info in packages.items():
+        name = info["name"]
         try:
             desc = info["description"].replace("\n", " ").strip()
-            list_.append(f"`{info['name']}`: {desc}")
+            print(name, desc)
+            if desc[-1] == ".":
+                raise ValueError(
+                    f"{name}: Package description should not end with a period."
+                )
+            list_.append(f"`{name}`: {desc}")
         except KeyError:
-            list_.append(f"`{info['name']}`")
+            list_.append(f"`{name}`")
     # Sort, add list indents and convert to string
     return "\n".join([f"- {s}" for s in sorted(list_)])
 

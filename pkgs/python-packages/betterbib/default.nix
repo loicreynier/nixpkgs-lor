@@ -18,7 +18,7 @@ buildPythonPackage rec {
   format = "wheel";
 
   meta = with lib; {
-    description = "Tool to update BibTeX files with info from online resources.";
+    description = "Tool to update BibTeX files with info from online resources";
     homepage = "https://github.com/texworld/betterbib";
     license = licenses.unfree;
     maintainers = with maintainers; [ loicreynier ];

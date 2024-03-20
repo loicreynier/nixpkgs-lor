@@ -48,7 +48,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "High-level Fomod library.";
+    description = "High-level Fomod library";
     homepage = "https://pyfomod.readthedocs.io";
     changelog = "https://github.com/GandaG/pyfomod/blob/master/CHANGELOG.md";
     license = "Apache-2.0";
