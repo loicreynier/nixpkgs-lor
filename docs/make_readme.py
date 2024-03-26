@@ -36,7 +36,6 @@ def package_list(packages: dict) -> str:
         name = info["name"]
         try:
             desc = info["description"].replace("\n", " ").strip()
-            print(name, desc)
             if desc[-1] == ".":
                 raise ValueError(
                     f"{name}: Package description should not end with a period."
