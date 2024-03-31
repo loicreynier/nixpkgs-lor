@@ -2,6 +2,7 @@
 with python; {
   betterbib = callPackage ./betterbib { };
   dmsuite = callPackage ./dmsuite { };
+  harlequin = callPackage ./harlequin { };
   mobase-stubs = callPackage ./mobase-stubs { };
   plm = callPackage ./plm { };
   py-machineid = callPackage ./py-machineid { };
