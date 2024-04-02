@@ -1,13 +1,14 @@
 { lib
 , fetchFromGitHub
-, stdenv
+, stdenvNoCC
+, makeWrapper
 , fzf
 , python3
 }:
 
-stdenv.mkDerivation {
+stdenvNoCC.mkDerivation {
   pname = "gh-notify";
-  version = "unstable-2024-03-19";
+  version = "0-unstable-2024-03-19";
 
   src = fetchFromGitHub {
     owner = "meiji163";
@@ -16,13 +17,16 @@ stdenv.mkDerivation {
     hash = "sha256-Ao6gUtgW7enVlWBQhlQDc8ZW/gP90atc2F4rDNUnjj8=";
   };
 
-  propagatedBuildInputs = [
-    fzf
-    python3
+  nativeBuildInputs = [
+    makeWrapper
   ];
 
   installPhase = ''
-    install -D -m744 "gh-notify" "$out/bin/gh-notify"
+    install -D -m755 "gh-notify" "$out/bin/gh-notify"
+  '';
+
+  postInstall = ''
+    wrapProgram "$out/bin/gh-notify" --prefix PATH : "${lib.makeBinPath [ fzf python3 ]}"
   '';
 
   meta = with lib; {
@@ -30,5 +34,7 @@ stdenv.mkDerivation {
     description = "GitHub CLI extension to display GitHub notifications";
     maintainers = with maintainers; [ loicreynier ];
     license = licenses.unlicense;
+    mainProgram = "gh-notify";
+    platforms = platforms.all;
   };
 }
