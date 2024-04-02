@@ -1,12 +1,13 @@
 { lib
 , fetchFromGitHub
-, stdenv
+, stdenvNoCC
+, makeWrapper
 , fzf
 , coreutils
 , bat
 }:
 
-stdenv.mkDerivation rec {
+stdenvNoCC.mkDerivation rec {
   pname = "gh-f";
   version = "1.1.5";
 
@@ -17,14 +18,16 @@ stdenv.mkDerivation rec {
     hash = "sha256-ITl8T8Oe21m047ygFlxWVjzUYPG4rlcTjfSpsropYJw=";
   };
 
-  propagatedBuildInputs = [
-    fzf
-    bat
-    coreutils
+  nativeBuildInputs = [
+    makeWrapper
   ];
 
   installPhase = ''
-    install -D -m744 "gh-f" "$out/bin/gh-f"
+    install -D -m755 "gh-f" "$out/bin/gh-f"
+  '';
+
+  postFixup = ''
+    wrapProgram "$out/bin/gh-f" --prefix PATH : "${lib.makeBinPath [fzf bat coreutils]}"
   '';
 
   meta = with lib; {
@@ -32,6 +35,7 @@ stdenv.mkDerivation rec {
     description = "GitHub CLI ultimate FZF extension";
     maintainers = with maintainers; [ loicreynier ];
     license = licenses.unlicense;
+    mainProgram = "gh-f";
+    platforms = platforms.all;
   };
 }
-
