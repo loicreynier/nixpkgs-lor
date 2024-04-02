@@ -2,12 +2,12 @@
 
 vimUtils.buildVimPlugin {
   pname = "zone-nvim";
-  version = "2023-04-07";
+  version = "0-unstable-2024-10-07";
   src = fetchFromGitHub {
     owner = "tamton-aquib";
     repo = "zone.nvim";
-    rev = "f51c9e1097d4a77a78ff60c7649f4cbeded71b2f";
-    hash = "sha256-qSOWWBUxfMr9F/xgXtNIO8uEHoMMhxUNoxZIuAakn9Q=";
+    rev = "8dc5b1277a94d6be3c2a039967cbc89cd825ba6f";
+    hash = "sha256-eCIWvKJ/PEDKKFNBm4wxTFAtJ2qeogmaEz9YKDR0APA=";
   };
   meta.homepage = "https://github.com/tamton-aquib/zone.nvim";
 }
