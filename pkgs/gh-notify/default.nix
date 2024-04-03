@@ -2,10 +2,25 @@
 , fetchFromGitHub
 , stdenvNoCC
 , makeWrapper
+, gh
+, gnugrep
 , fzf
 , python3
+, withDelta ? false
+, delta
+, withBat ? false
+, bat
 }:
-
+let
+  binPath = lib.makeBinPath ([
+    gh
+    gnugrep
+    fzf
+    python3
+  ]
+  ++ lib.optional withBat bat
+  ++ lib.optional withDelta delta);
+in
 stdenvNoCC.mkDerivation {
   pname = "gh-notify";
   version = "0-unstable-2024-03-19";
@@ -25,8 +40,8 @@ stdenvNoCC.mkDerivation {
     install -D -m755 "gh-notify" "$out/bin/gh-notify"
   '';
 
-  postInstall = ''
-    wrapProgram "$out/bin/gh-notify" --prefix PATH : "${lib.makeBinPath [ fzf python3 ]}"
+  postFixup = ''
+    wrapProgram "$out/bin/gh-notify" --prefix PATH : "${binPath}"
   '';
 
   meta = with lib; {
