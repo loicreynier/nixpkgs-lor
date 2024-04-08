@@ -85,7 +85,7 @@
             deadnix.enable = true;
             editorconfig-checker = {
               enable = true;
-              excludes = [ "flake\.lock" ];
+              excludes = [ "flake\.lock" "deps\.nix" ];
             };
             nixpkgs-fmt.enable = true;
             ruff.enable = true;
@@ -94,7 +94,10 @@
               excludes = [ "flake\.lock" ];
             };
             statix.enable = true;
-            typos.enable = true;
+            typos = {
+              enable = true;
+              excludes = [ "deps\.nix" ];
+            };
           };
         };
       };
