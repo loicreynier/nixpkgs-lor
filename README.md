@@ -16,8 +16,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 <!-- editorconfig-checker-disable -->
 
 - `foxmarks-2.0.3`: CLI read-only interface for Mozilla Firefox's bookmarks
-- `gh-f-1.1.5`: GitHub CLI ultimate FZF extension
-- `gh-notify-0-unstable-2024-03-19`: GitHub CLI extension to display GitHub notifications
 - `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
 - `pinentry-wsl-ps1-0.2-unstable-2022-09-04`: GUI for GPG within Windows Subsystem for Linux
 - `pinentry-wsl-ps1-wsl2-0.2-unstable-2023-03-10`: GUI for GPG within Windows Subsystem for Linux
@@ -43,6 +41,8 @@ can be found in the `./pkgs-old` folder.
 
 - `fira-math`: available in [`nixpkgs/unstable`][fira-math]
 - `gen-license`: available in [`nixpkgs`][gen-license]
+- `gh-f`: available in [`nixpkgs/unstable`][gh-f]
+- `gh-notify`: available in [`nixpkgs/unstable`][gh-notify]
 - `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
 - `pdfrw2`: available in [`nixpkgs/unstable`][pdfrw2]
 - `src-cli`: available in [`nixpkgs`][src-cli]
@@ -56,6 +56,8 @@ This overlay automatically provides all plugins from [awesome-neovim].
 [pdfrw2]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/pdfrw2/default.nix
 [fira-math]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/fi/fira-math/package.nix
 [gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/gen-license/default.nix
+[gh-f]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gh/gh-f/package.nix
+[gh-notify]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gh/gh-notify/package.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/misc/src-cli/default.nix
 [NixNeovimPlugins]: https://github.com/NixNeovim/NixNeovimPlugins
