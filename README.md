@@ -32,6 +32,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `vimplugin-duck-nvim-1.0.0-unstable-2024-03-07`
 - `vimplugin-vim-bbcode-syntax-0.2`
 - `vimplugin-zone-nvim-0-unstable-2024-10-07`
+- `when-cli-0.4.0`: Command line tool for converting between timezones
 - `win32yank-bin-0.1.1`: Windows clipboard tool
 
 <!-- editorconfig-checker-enable -->

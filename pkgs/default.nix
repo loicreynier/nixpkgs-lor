@@ -9,4 +9,5 @@ with pkgs;
   spriggit = callPackage ./spriggit { };
   # win32yank = callPackage ./win32yank { }; # Can't compile on Nix/Linux
   win32yank-bin = callPackage ./win32yank/bin.nix { };
+  when-cli = callPackage ./when-cli { };
 }
