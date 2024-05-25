@@ -20,3 +20,8 @@ rebuild-all:
     nix flake show --json \
         | jq '.packages."x86_64-linux"|keys[]' \
         | xargs -I {} nix build --rebuild .#{}
+
+# Update Spriggit deps
+update-spriggit:
+    nix build .#spriggit.passthru.fetch-deps \
+    && nix ./result pkgs/spriggit/deps.nix

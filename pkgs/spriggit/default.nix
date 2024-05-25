@@ -7,16 +7,16 @@
 }:
 buildDotnetModule rec {
   pname = "spriggit-cli";
-  version = "0.18";
+  version = "0.20";
   src = fetchFromGitHub {
     owner = "Mutagen-Modding";
     repo = "Spriggit";
     rev = version;
-    hash = "sha256-d+lZTDqVYefu00vZ9zozQB+Ysgqig1/ThTf+kwlJY2Q=";
+    hash = "sha256-wgMXpT8BUF56Mth6508w4pCUtRj5IG0nRsz2QGrTAYw=";
   };
 
   projectFile = "Spriggit.CLI/Spriggit.CLI.csproj";
-  nugetDeps = ./deps.nix; # To update: `nix build .#default.passthru.fetch-deps && ./result deps.nix`
+  nugetDeps = ./deps.nix; # To update: `nix build .#spriggit.passthru.fetch-deps && ./result pkgs/spriggit/deps.nix`
   dotnet-sdk = with dotnetCorePackages; combinePackages [ sdk_7_0 sdk_8_0 ];
   dotnet-runtime = dotnetCorePackages.runtime_7_0;
   runtimeDeps = [
