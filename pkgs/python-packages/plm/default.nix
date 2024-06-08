@@ -42,7 +42,9 @@ buildPythonPackage rec {
     pynacl
     requests
     requests-cache
-    rich-argparse
+    (rich-argparse.overridePythonAttrs (_: {
+      doCheck = false;
+    }))
     tomli
     tomli-w
     x21

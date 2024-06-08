@@ -4,8 +4,8 @@
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:NixOS/nixpkgs";
-    pre-commit-hooks = {
-      url = "github:cachix/pre-commit-hooks.nix";
+    git-hooks = {
+      url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -14,7 +14,7 @@
     { self
     , flake-utils
     , nixpkgs
-    , pre-commit-hooks
+    , git-hooks
     }:
     {
       overlays.default = nixpkgs.lib.composeManyExtensions [
@@ -68,7 +68,7 @@
         // import ./pkgs/vim-plugins { inherit pkgs; };
 
       checks = {
-        pre-commit-check = pre-commit-hooks.lib.${system}.run {
+        pre-commit-check = git-hooks.lib.${system}.run {
           src = ./.;
 
           hooks = {
