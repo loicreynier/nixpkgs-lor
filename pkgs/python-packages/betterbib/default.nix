@@ -1,6 +1,7 @@
 { lib
 , buildPythonPackage
 , fetchPypi
+, bibtexparser
 , platformdirs
 , plm
 , pybtex
@@ -14,7 +15,7 @@
 
 buildPythonPackage rec {
   pname = "betterbib";
-  version = "5.0.11";
+  version = "7.1.11";
   format = "wheel";
 
   meta = with lib; {
@@ -29,10 +30,11 @@ buildPythonPackage rec {
     inherit pname version format;
     python = "py3";
     dist = "py3";
-    hash = "sha256-3Tr0D2RWGI5mis9qJY4Gl1scvfwtW1my2daGprFfaDU=";
+    hash = "sha256-YwqTxmazNeZ16EiXMyYmA5MVSxFRSmqvweQY4BD234I=";
   };
 
   propagatedBuildInputs = [
+    bibtexparser
     platformdirs
     requests-cache
     plm
