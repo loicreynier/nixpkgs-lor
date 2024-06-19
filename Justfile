@@ -3,7 +3,7 @@ make-readme:
     python3 ./docs/make_readme.py
 
 # Update and rebuild all packages (for testing)
-update: update-inputs rebuild-all
+update: update-inputs build-all
 
 # Update flake's inputs
 update-inputs:
