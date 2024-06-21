@@ -10,15 +10,8 @@
 buildPythonPackage rec {
   pname = "xdg-open-wsl";
   version = "2022-04-16";
-  format = "pyproject";
+  pyproject = true;
   disabled = pythonOlder "3.8";
-
-  meta = with lib; {
-    description = "xdg-open replacement for WSL that opens files and links using Windows apps";
-    homepage = "https://github.com/cpbotha/xdg-open-wsl";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ loicreynier ];
-  };
 
   src = fetchFromGitHub {
     owner = "cpbotha";
@@ -27,11 +20,11 @@ buildPythonPackage rec {
     hash = "sha256-Etfrp0KWieK933fZP8KDUClnLUyiMxl2G58KpN18DPk=";
   };
 
-  nativeBuildInputs = [
+  build-system = [
     poetry-core
   ];
 
-  propagatedBuildInputs = [
+  dependencies = [
     click
   ];
 
@@ -55,4 +48,11 @@ buildPythonPackage rec {
   pythonImportsCheck = [
     "xdg_open_wsl"
   ];
+
+  meta = with lib; {
+    description = "xdg-open replacement for WSL that opens files and links using Windows apps";
+    homepage = "https://github.com/cpbotha/xdg-open-wsl";
+    license = licenses.bsd3;
+    maintainers = with maintainers; [ loicreynier ];
+  };
 }

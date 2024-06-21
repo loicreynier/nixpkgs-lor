@@ -5,13 +5,12 @@
 , pythonOlder
   # , pytestCheckHook
 , lxml
-, tree
 }:
 
 buildPythonPackage rec {
   pname = "pyfomod";
   version = "1.2.1";
-  format = "pyproject";
+  pyproject = true;
   disabled = pythonOlder "3.6";
 
   src = fetchPypi {
@@ -26,19 +25,15 @@ buildPythonPackage rec {
       --replace-fail 'lxml = "^4"' 'lxml = ">=4.0"'
   '';
 
-  preBuild = ''
-    ${tree}/bin/tree
-  '';
-
-  nativeBuildInputs = [
+  build-system = [
     poetry-core
   ];
 
-  propagatedBuildInputs = [
+  dependencies = [
     lxml
   ];
 
-  # Tests are not uploaded to PyPi
+  # Tests are not uploaded to PyPi. TODO: fetch from GitHub
   # nativeCheckInputs = [
   #   pytestCheckHook
   # ];

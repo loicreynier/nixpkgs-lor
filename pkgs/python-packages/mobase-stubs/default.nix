@@ -18,12 +18,16 @@ buildPythonPackage rec {
     hash = "sha256-K3aiZOGuFsjr20qVb3bD02atlIJ68HrtuYwgPU6H4f4=";
   };
 
-  nativeBuildInputs = [
+  dependencies = [
     mypy
     pyqt5-stubs
   ];
 
   doCheck = false;
+
+  pythonImportsChecks = [
+    "mobase-stubs"
+  ];
 
   meta = with lib; {
     description = "Typing stubs for MO2 Python API";

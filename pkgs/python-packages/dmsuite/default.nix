@@ -11,8 +11,28 @@
 buildPythonPackage rec {
   pname = "dmsuite";
   version = "0.3.0";
-  format = "pyproject";
+  pyproject = true;
+
   disabled = pythonOlder "3.7";
+
+  src = fetchPypi {
+    inherit pname version;
+    hash = "sha256-IqLsHkGNgPz2yZm0QMyMMo6Mr2RsU2DPGxYpoNwC3fs=";
+  };
+
+  build-system = [
+    setuptools
+    setuptools-scm
+  ];
+
+  nativeBuildInputs = [
+    numpy
+    scipy
+  ];
+
+  pythonImportsCheck = [
+    "dmsuite"
+  ];
 
   meta = with lib; {
     description = "Scientific library providing a collection of spectral collocation differentiation matrices";
@@ -21,20 +41,4 @@ buildPythonPackage rec {
     license = licenses.gpl2;
     maintainers = with maintainers; [ loicreynier ];
   };
-
-  src = fetchPypi {
-    inherit pname version;
-    hash = "sha256-IqLsHkGNgPz2yZm0QMyMMo6Mr2RsU2DPGxYpoNwC3fs=";
-  };
-
-  nativeBuildInputs = [
-    numpy
-    setuptools
-    setuptools-scm
-    scipy
-  ];
-
-  pythonImportsCheck = [
-    "dmsuite"
-  ];
 }

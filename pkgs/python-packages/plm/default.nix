@@ -34,7 +34,7 @@ buildPythonPackage rec {
     hash = "sha256-uTNKFB6jYCvDp8Th7KSst+2ISl3KYzPeJy2PPItW5eo=";
   };
 
-  propagatedBuildInputs = [
+  dependencies = [
     cryptography
     ntplib
     platformdirs

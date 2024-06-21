@@ -40,11 +40,10 @@ buildPythonPackage {
 
   src = fetchurl sources."${pyVerNoDot}";
 
-  buildInputs = [
+  build-system = [
     stdenv.cc.cc.lib
+    autoPatchelfHook
   ];
-
-  nativeBuildInputs = [ autoPatchelfHook ];
 
   pythonImportsCheck = [ "x21" ];
 }
