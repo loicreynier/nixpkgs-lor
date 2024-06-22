@@ -24,4 +24,4 @@ rebuild-all:
 # Update Spriggit deps
 update-spriggit:
     nix build .#spriggit.passthru.fetch-deps \
-    && nix ./result pkgs/spriggit/deps.nix
+    && ./result ./pkgs/spriggit/deps.nix

@@ -28,7 +28,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.11-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
 - `python3.11-x21-0.5.1`
 - `python3.11-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
-- `spriggit-cli-0.20`: Tool to facilitate converting Bethesda plugin files to a text based format that can be stored in Git
+- `spriggit-cli-0.24`: Tool to facilitate converting Bethesda plugin files to a text based format that can be stored in Git
 - `vimplugin-duck-nvim-1.0.0-unstable-2024-03-07`
 - `vimplugin-vim-bbcode-syntax-0.2`
 - `vimplugin-zone-nvim-0-unstable-2024-10-07`
