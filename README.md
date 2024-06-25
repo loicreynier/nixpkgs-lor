@@ -16,7 +16,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 <!-- editorconfig-checker-disable -->
 
 - `foxmarks-2.0.3`: CLI read-only interface for Mozilla Firefox's bookmarks
-- `goto-2.0.0`: Shell utility allowing users to navigate to aliased directories
+- `goto-2.1.0`: Shell utility allowing users to navigate to aliased directories
 - `pinentry-wsl-ps1-0.2-unstable-2022-09-04`: GUI for GPG within Windows Subsystem for Linux
 - `pinentry-wsl-ps1-wsl2-0.2-unstable-2023-03-10`: GUI for GPG within Windows Subsystem for Linux
 - `python3.11-betterbib-7.1.17`: Tool to update BibTeX files with info from online resources

@@ -1,21 +1,38 @@
-{ stdenv, fetchFromGitHub, lib }:
-
+{ stdenv
+, fetchFromGitHub
+, fetchpatch
+, lib
+, withPatches ? true
+}:
 stdenv.mkDerivation rec {
   pname = "goto";
-  version = "2.0.0";
+  version = "2.1.0";
 
   src = fetchFromGitHub {
     owner = "iridakos";
     repo = pname;
-    rev = "refs/tags/v${version}";
-    hash = "sha256-7/fEa5jXKbTwzyHhvpp8yuoo70DdlX1AxidYuc1PjV0=";
+    rev = "b7fda54e0817b9cb47e22a78bd00b4571011cf58";
+    hash = "sha256-dUxim8LLb+J9cI7HySkmC2DIWbWAKSsH/cTVXmt8zRo=";
   };
 
-  patchFlags = [ "-F3" ];
+  patchFlags = [
+    "-F3"
+  ];
 
   patches = [
-    ./replace-mv-by-command-mv.patch
     ./dont-touch-db.patch
+  ] ++ lib.optional withPatches [
+    ./replace-mv-by-command-mv.patch
+    (fetchpatch {
+      name = "alias-subdir-completion";
+      url = "https://github.com/iridakos/goto/commit/6ccea40a8f0b331897d71af1d88c5f458b40faa4.patch";
+      sha256 = "sha256-vWjCXKEOvq0kbvN9iFiBcewbOMTCNzYKCb4Hr4mmubk=";
+    })
+    (fetchpatch {
+      name = "sort-feature";
+      url = "https://github.com/iridakos/goto/pull/67/commits/916fca0f5b5bec096dffc10ee48ca99de28043c5.patch";
+      sha256 = "sha256-yIxsvOpupz1Ez6Y6X43b9LsVMHtVRiSxcclf4cMUP04=";
+    })
   ];
 
   outputs = [ "out" ];
