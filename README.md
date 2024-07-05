@@ -23,7 +23,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.11-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
 - `python3.11-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
 - `python3.11-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
-- `python3.11-py-machineid-0.4.6`: Library to get the unique machine ID of any host
+- `python3.11-py-machineid-0.6.0`: Library to get the unique machine ID of any host
 - `python3.11-pyfomod-1.2.1`: High-level Fomod library
 - `python3.11-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
 - `python3.11-x21-0.5.1`

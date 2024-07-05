@@ -6,11 +6,11 @@
 
 buildPythonPackage rec {
   pname = "py-machineid";
-  version = "0.4.6";
+  version = "0.6.0";
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-09nNharjHS8XLyeDPl/Rff/Sz3xJGDkOwGMAcC0CzY4=";
+    hash = "sha256-AMONhSHUKaRTm92SlnI02yihorSyYwYrNRygAjMuYz8=";
   };
 
   dependencies = [
