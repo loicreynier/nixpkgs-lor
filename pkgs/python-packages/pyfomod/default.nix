@@ -3,10 +3,11 @@
 , fetchPypi
 , poetry-core
 , pythonOlder
-  # , pytestCheckHook
-, lxml
+, # , pytestCheckHook
+  lxml
+, looseversion
+,
 }:
-
 buildPythonPackage rec {
   pname = "pyfomod";
   version = "1.2.1";
@@ -18,19 +19,18 @@ buildPythonPackage rec {
     hash = "sha256-/W2hT7db4qEMm+kkYmep9b8y1vcuLL/k0M8s3qeVUj8=";
   };
 
-  patchPhase = ''
-    substituteInPlace pyproject.toml \
-      --replace-fail "poetry>=0.12" "poetry-core" \
-      --replace-fail "poetry.masonry" "poetry.core.masonry" \
-      --replace-fail 'lxml = "^4"' 'lxml = ">=4.0"'
-  '';
-
   build-system = [
     poetry-core
   ];
 
+  patches = [
+    ./update-pyproject.patch
+    ./python-312-distutils-looseversion.patch
+  ];
+
   dependencies = [
     lxml
+    looseversion
   ];
 
   # Tests are not uploaded to PyPi. TODO: fetch from GitHub
