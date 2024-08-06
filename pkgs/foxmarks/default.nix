@@ -11,7 +11,7 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-9IG/ZHNbMHbz/2mOAhfwuPJbQXhlG80mfHNM4e7Ng0g=";
   };
 
-  cargoSha256 = "sha256-NtM5vLBum5nR8zNGMAykzt258avXkuO4XR3z6KCnjYA=";
+  cargoHash = "sha256-NtM5vLBum5nR8zNGMAykzt258avXkuO4XR3z6KCnjYA=";
 
   buildInputs = [
     sqlite

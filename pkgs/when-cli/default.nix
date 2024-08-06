@@ -9,7 +9,7 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-LWssrLl2HKul24N3bJdf2ePqeR4PCROrTiVY5sqzB2M=";
   };
 
-  cargoSha256 = "sha256-9emY0yhAKVzuk1Tlzi0kW8oR9jRqLdg8wbTcJMBrxMw=";
+  cargoHash = "sha256-9emY0yhAKVzuk1Tlzi0kW8oR9jRqLdg8wbTcJMBrxMw=";
 
   meta = with lib; {
 
