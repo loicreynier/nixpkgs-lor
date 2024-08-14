@@ -1,8 +1,4 @@
-{ lib
-, buildPythonPackage
-, fetchPypi
-, winregistry
-}:
+{ lib, buildPythonPackage, fetchPypi, winregistry }:
 
 buildPythonPackage rec {
   pname = "py-machineid";
@@ -13,9 +9,7 @@ buildPythonPackage rec {
     hash = "sha256-AMONhSHUKaRTm92SlnI02yihorSyYwYrNRygAjMuYz8=";
   };
 
-  dependencies = [
-    winregistry
-  ];
+  dependencies = [ winregistry ];
 
   pythonImportsCheck = [ "machineid" ];
 

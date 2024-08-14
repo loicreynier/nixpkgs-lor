@@ -1,7 +1,6 @@
 { pkgs }:
 
-with pkgs;
-{
+with pkgs; {
   foxmarks = callPackage ./foxmarks { };
   goto = callPackage ./goto { };
   pinentry-wsl-ps1 = callPackage ./pinentry-wsl-ps1 { };

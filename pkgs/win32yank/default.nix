@@ -13,9 +13,7 @@ rustPlatform.buildRustPackage rec {
 
   cargoHash = "sha256-maQkXf10utUhHvM4pnNfp8qHW5jgyMaX/d7xo/+Nbos=";
 
-  cargoPatches = [
-    ./add-cargo-lock.patch
-  ];
+  cargoPatches = [ ./add-cargo-lock.patch ];
 
   meta = with lib; {
     description = "Windows clipboard tool";

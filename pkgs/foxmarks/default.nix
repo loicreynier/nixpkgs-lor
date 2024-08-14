@@ -13,14 +13,13 @@ rustPlatform.buildRustPackage rec {
 
   cargoHash = "sha256-NtM5vLBum5nR8zNGMAykzt258avXkuO4XR3z6KCnjYA=";
 
-  buildInputs = [
-    sqlite
-  ];
+  buildInputs = [ sqlite ];
 
   meta = with lib; {
     description = "CLI read-only interface for Mozilla Firefox's bookmarks";
     homepage = "https://github.com/zer0-x/foxmarks";
-    changelog = "https://github.com/zer0-x/foxmarks/blobl/v${version}/CHANGELOG.md";
+    changelog =
+      "https://github.com/zer0-x/foxmarks/blobl/v${version}/CHANGELOG.md";
     license = licenses.gpl3;
   };
 }

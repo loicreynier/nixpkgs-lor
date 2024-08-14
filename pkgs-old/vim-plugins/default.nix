@@ -1,7 +1,6 @@
 { pkgs }:
 
-with pkgs;
-{
+with pkgs; {
   mkdnflow-nvim = callPackage ./mkdnflow-nvim { };
   neocolumn-nvim = callPackage ./neocolumn-nvim { };
   pantran-nvim = callPackage ./pantran-nvim { };

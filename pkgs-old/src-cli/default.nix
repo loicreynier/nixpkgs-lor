@@ -1,7 +1,4 @@
-{ lib
-, buildGoModule
-, fetchFromGitHub
-}:
+{ lib, buildGoModule, fetchFromGitHub }:
 
 buildGoModule rec {
   pname = "src-cli";
@@ -20,7 +17,8 @@ buildGoModule rec {
   meta = with lib; {
     description = "Command line interface to Sourcegraph";
     homepage = "https://github.com/sourcegraph/src-cli";
-    changelog = "https://github.com/sourcegraph/src-cli/blob/${version}/CHANGELOG.md";
+    changelog =
+      "https://github.com/sourcegraph/src-cli/blob/${version}/CHANGELOG.md";
     maintainers = with maintainers; [ loicreynier ];
     license = licenses.asl20;
   };

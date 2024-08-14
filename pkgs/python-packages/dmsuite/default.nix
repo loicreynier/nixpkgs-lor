@@ -1,12 +1,5 @@
-{ lib
-, buildPythonPackage
-, fetchPypi
-, numpy
-, pythonOlder
-, setuptools
-, setuptools-scm
-, scipy
-}:
+{ lib, buildPythonPackage, fetchPypi, numpy, pythonOlder, setuptools
+, setuptools-scm, scipy }:
 
 buildPythonPackage rec {
   pname = "dmsuite";
@@ -20,22 +13,15 @@ buildPythonPackage rec {
     hash = "sha256-IqLsHkGNgPz2yZm0QMyMMo6Mr2RsU2DPGxYpoNwC3fs=";
   };
 
-  build-system = [
-    setuptools
-    setuptools-scm
-  ];
+  build-system = [ setuptools setuptools-scm ];
 
-  nativeBuildInputs = [
-    numpy
-    scipy
-  ];
+  nativeBuildInputs = [ numpy scipy ];
 
-  pythonImportsCheck = [
-    "dmsuite"
-  ];
+  pythonImportsCheck = [ "dmsuite" ];
 
   meta = with lib; {
-    description = "Scientific library providing a collection of spectral collocation differentiation matrices";
+    description =
+      "Scientific library providing a collection of spectral collocation differentiation matrices";
     homepage = "https://github.com/labrosse/dmsuite";
     changelog = "https://github.com/labrosse/dmsuite/releases/tag/v${version}";
     license = licenses.gpl2;

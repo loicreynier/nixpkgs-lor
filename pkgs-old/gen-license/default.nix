@@ -14,7 +14,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Interactive command-line tool for generating license files";
     homepage = "https://github.com/nexxeln/license-generator";
-    changelog = "https://github.com/nexxeln/license-generator/releases/tag/${version}";
+    changelog =
+      "https://github.com/nexxeln/license-generator/releases/tag/${version}";
     license = licenses.mit;
     maintainers = with maintainers; [ loicreynier ];
   };

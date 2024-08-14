@@ -1,6 +1,4 @@
-{ pinentry-wsl-ps1
-, fetchpatch
-}:
+{ pinentry-wsl-ps1, fetchpatch }:
 
 pinentry-wsl-ps1.overrideAttrs (oldAttrs: {
   pname = oldAttrs.pname + "-wsl2";

@@ -1,17 +1,5 @@
-{ lib
-, buildPythonPackage
-, fetchPypi
-, bibtexparser
-, platformdirs
-, plm
-, pybtex
-, pylatexenc
-, requests-cache
-, rich
-, tomli
-, unidecode
-, x21
-}:
+{ lib, buildPythonPackage, fetchPypi, bibtexparser, platformdirs, plm, pybtex
+, pylatexenc, requests-cache, rich, tomli, unidecode, x21 }:
 
 buildPythonPackage rec {
   pname = "betterbib";

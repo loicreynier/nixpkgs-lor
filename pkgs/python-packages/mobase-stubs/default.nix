@@ -1,10 +1,4 @@
-{ lib
-, buildPythonPackage
-, fetchPypi
-, mypy
-, pyqt5-stubs
-, pythonOlder
-}:
+{ lib, buildPythonPackage, fetchPypi, mypy, pyqt5-stubs, pythonOlder }:
 
 buildPythonPackage rec {
   pname = "mobase-stubs";
@@ -18,16 +12,11 @@ buildPythonPackage rec {
     hash = "sha256-K3aiZOGuFsjr20qVb3bD02atlIJ68HrtuYwgPU6H4f4=";
   };
 
-  dependencies = [
-    mypy
-    pyqt5-stubs
-  ];
+  dependencies = [ mypy pyqt5-stubs ];
 
   doCheck = false;
 
-  pythonImportsChecks = [
-    "mobase-stubs"
-  ];
+  pythonImportsChecks = [ "mobase-stubs" ];
 
   meta = with lib; {
     description = "Typing stubs for MO2 Python API";

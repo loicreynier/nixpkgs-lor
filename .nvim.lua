@@ -7,7 +7,7 @@ if _lspconfig_loaded and _lspformat_loaded then
     settings = {
       ["nil"] = {
         formatting = {
-          command = { "nixpkgs-fmt" }
+          command = { "nixfmt" }
         }
       }
     }

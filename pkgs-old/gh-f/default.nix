@@ -1,26 +1,9 @@
-{ lib
-, fetchFromGitHub
-, stdenvNoCC
-, makeWrapper
-, gh
-, fzf
-, coreutils
-, gawk
-, gnused
-, withBat ? false
-, bat
-}:
+{ lib, fetchFromGitHub, stdenvNoCC, makeWrapper, gh, fzf, coreutils, gawk
+, gnused, withBat ? false, bat }:
 let
-  binPath = lib.makeBinPath ([
-    gh
-    fzf
-    coreutils
-    gawk
-    gnused
-  ]
-  ++ lib.optional withBat bat);
-in
-stdenvNoCC.mkDerivation rec {
+  binPath = lib.makeBinPath
+    ([ gh fzf coreutils gawk gnused ] ++ lib.optional withBat bat);
+in stdenvNoCC.mkDerivation rec {
   pname = "gh-f";
   version = "1.1.5";
 
@@ -31,9 +14,7 @@ stdenvNoCC.mkDerivation rec {
     hash = "sha256-ITl8T8Oe21m047ygFlxWVjzUYPG4rlcTjfSpsropYJw=";
   };
 
-  nativeBuildInputs = [
-    makeWrapper
-  ];
+  nativeBuildInputs = [ makeWrapper ];
 
   installPhase = ''
     install -D -m755 "gh-f" "$out/bin/gh-f"

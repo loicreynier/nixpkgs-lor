@@ -1,6 +1,4 @@
-{ fetchFromGitHub
-, vimUtils
-}:
+{ fetchFromGitHub, vimUtils }:
 vimUtils.buildVimPlugin rec {
   pname = "vim-bbcode-syntax";
   version = "0.2";
@@ -12,5 +10,4 @@ vimUtils.buildVimPlugin rec {
   };
   meta.homepage = "https://github.com/vim-scripts/bbcode";
 }
-
 

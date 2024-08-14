@@ -1,10 +1,4 @@
-{ lib
-, fetchFromGitHub
-, gnugrep
-, iproute2
-, makeWrapper
-, stdenv
-}:
+{ lib, fetchFromGitHub, gnugrep, iproute2, makeWrapper, stdenv }:
 stdenv.mkDerivation {
   pname = "pinentry-wsl-ps1";
   version = "0.2-unstable-2022-09-04";
@@ -18,10 +12,7 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ makeWrapper ];
 
-  propagatedBuildInputs = [
-    gnugrep
-    iproute2
-  ];
+  propagatedBuildInputs = [ gnugrep iproute2 ];
 
   installPhase = ''
     src="pinentry-wsl-ps1.sh"

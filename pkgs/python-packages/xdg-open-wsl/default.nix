@@ -1,11 +1,5 @@
-{ lib
-, buildPythonPackage
-, fetchFromGitHub
-, pytestCheckHook
-, pythonOlder
-, poetry-core
-, click
-}:
+{ lib, buildPythonPackage, fetchFromGitHub, pytestCheckHook, pythonOlder
+, poetry-core, click }:
 
 buildPythonPackage rec {
   pname = "xdg-open-wsl";
@@ -20,17 +14,11 @@ buildPythonPackage rec {
     hash = "sha256-Etfrp0KWieK933fZP8KDUClnLUyiMxl2G58KpN18DPk=";
   };
 
-  build-system = [
-    poetry-core
-  ];
+  build-system = [ poetry-core ];
 
-  dependencies = [
-    click
-  ];
+  dependencies = [ click ];
 
-  nativeCheckInputs = [
-    pytestCheckHook
-  ];
+  nativeCheckInputs = [ pytestCheckHook ];
 
   postPatch = ''
     substituteInPlace pyproject.toml \
@@ -45,12 +33,11 @@ buildPythonPackage rec {
         'click = ">=7.1.1"'
   '';
 
-  pythonImportsCheck = [
-    "xdg_open_wsl"
-  ];
+  pythonImportsCheck = [ "xdg_open_wsl" ];
 
   meta = with lib; {
-    description = "xdg-open replacement for WSL that opens files and links using Windows apps";
+    description =
+      "xdg-open replacement for WSL that opens files and links using Windows apps";
     homepage = "https://github.com/cpbotha/xdg-open-wsl";
     license = licenses.bsd3;
     maintainers = with maintainers; [ loicreynier ];

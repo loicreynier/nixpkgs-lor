@@ -14,12 +14,7 @@ fira-math.overrideAttrs (oldAttrs: {
   dontUnpack = false;
 
   buildInputs = [
-    (python3.withPackages (ps: with ps; [
-      fontmake
-      fonttools
-      glyphslib
-      toml
-    ]))
+    (python3.withPackages (ps: with ps; [ fontmake fonttools glyphslib toml ]))
   ];
 
   buildPhase = ''
