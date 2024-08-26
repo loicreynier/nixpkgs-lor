@@ -1,12 +1,12 @@
 { lib, buildDotnetModule, fetchFromGitHub, dotnetCorePackages, git, icu }:
 buildDotnetModule rec {
   pname = "spriggit-cli";
-  version = "0.25";
+  version = "0.26";
   src = fetchFromGitHub {
     owner = "Mutagen-Modding";
     repo = "Spriggit";
     rev = version;
-    hash = "sha256-LG12Wpkuyek06vl9TGPqyNqsIBviraQrF86hJmXlqS0=";
+    hash = "sha256-Wk0cJoryNk916Q9EgAxz4+4dqLmfss3C0A4cyb9FNqo=";
   };
 
   projectFile = "Spriggit.CLI/Spriggit.CLI.csproj";
