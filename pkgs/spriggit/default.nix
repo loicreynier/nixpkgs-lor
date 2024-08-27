@@ -12,8 +12,8 @@ buildDotnetModule rec {
   projectFile = "Spriggit.CLI/Spriggit.CLI.csproj";
   nugetDeps =
     ./deps.nix; # To update: `nix build .#spriggit.passthru.fetch-deps && ./result pkgs/spriggit/deps.nix`
-  dotnet-sdk = with dotnetCorePackages; combinePackages [ sdk_7_0 sdk_8_0 ];
-  dotnet-runtime = dotnetCorePackages.runtime_7_0;
+  dotnet-sdk = with dotnetCorePackages; combinePackages [ sdk_8_0 ];
+  dotnet-runtime = dotnetCorePackages.runtime_8_0;
   runtimeDeps = [ icu ];
   executables = [ "Spriggit.CLI" ];
 
