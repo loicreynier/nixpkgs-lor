@@ -33,11 +33,6 @@
     hash = "sha256-ApU9y1yX60daSjPk3KYDBeJ7XZByKW8hse9NRZGcjeo=";
   })
   (fetchNuGet {
-    pname = "DotNetZip";
-    version = "1.16.0";
-    hash = "sha256-RlzHkO7DxCvRkr+gpM8Abs34XbovmBTmXfO7LtnE75E=";
-  })
-  (fetchNuGet {
     pname = "DynamicData";
     version = "7.12.11";
     hash = "sha256-DlVoyXOylmEJDPFFmZFXmhWeTRLLrtl4+chm0t4ZIJU=";
@@ -249,16 +244,6 @@
   })
   (fetchNuGet {
     pname = "Microsoft.NETCore.Platforms";
-    version = "3.1.0";
-    hash = "sha256-cnygditsEaU86bnYtIthNMymAHqaT/sf9Gjykhzqgb0=";
-  })
-  (fetchNuGet {
-    pname = "Microsoft.NETCore.Platforms";
-    version = "3.1.1";
-    hash = "sha256-ByV7aEFjGR4L4Tudg4KaJ96lnzr7RhOxzWGE0p5XFRY=";
-  })
-  (fetchNuGet {
-    pname = "Microsoft.NETCore.Platforms";
     version = "5.0.0";
     hash = "sha256-LIcg1StDcQLPOABp4JRXIs837d7z0ia6+++3SF3jl1c=";
   })
@@ -304,48 +289,43 @@
   })
   (fetchNuGet {
     pname = "Microsoft.Win32.SystemEvents";
-    version = "4.7.0";
-    hash = "sha256-GHxnD1Plb32GJWVWSv0Y51Kgtlb+cdKgOYVBYZSgVF4=";
-  })
-  (fetchNuGet {
-    pname = "Microsoft.Win32.SystemEvents";
     version = "7.0.0";
     hash = "sha256-i6JojctqrqfJ4Wa+BDtaKZEol26jYq5DTQHar2M9B64=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-71UkgVrIDho+Qte4ahKwELrTECbyIlwFTgfXgGj2hNc=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-1tzslg+p7XhmhUO1bOcj6OthJlI6ecfn3GCE0b0B3aY=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Core";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-nxjpNwGv5tfyvx1+jyXq32Ey2a7cHj6G3eDJSxzfhy4=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-yUzNRK7N73wZyqiehBc8WOw/Ld08q0dcN4xdEhHecuM=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Fallout4";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-fjc8sduVGnRSCVEov90OHFqQdKsO9ZWDsVKcyVr6XrA=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-EAqEmkchbhIzjv8hAWHX2nrSwbAoTcSd90EKOFqfymA=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Kernel";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-iuZSN8pueJu0OOoafKvQVcR9wHEpLTimGzxXsGub/q8=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-I5mhZi80HeL2/jJYq4Y0roDjlH6I5lAHJz4Ei/fxwbY=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Oblivion";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-j+55J8NHBd4Ac0gKCcU00ZLpDn6IoxHv1Aj4/3ljneU=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-BcVqQLc//stIjb8cj4AacIv8lEch6BFGtcnb4ZNqwAw=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Skyrim";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-ikxgL6LpWPVjTLAVX4oVve847iNTwPVgJgus9fnQS+w=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-81XV1d2tjfdwFPgCwanFxCAhJfm2a62TI0UMvA+8zRI=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Starfield";
-    version = "0.46.0.1-nightly-20240815-074034";
-    hash = "sha256-jQISYlZLf15kH5eTWArM2K69n6mKNZl4o7a3fhgp54U=";
+    version = "0.46.0.1-nightly-20240902-190772";
+    hash = "sha256-QB050diA2KMYl0i+qOnvyzovcD6o2UYCzkD+/Yh1VwM=";
   })
   (fetchNuGet {
     pname = "NETStandard.Library";
@@ -900,11 +880,6 @@
   })
   (fetchNuGet {
     pname = "System.Drawing.Common";
-    version = "4.7.0";
-    hash = "sha256-D3qG+xAe78lZHvlco9gHK2TEAM370k09c6+SQi873Hk=";
-  })
-  (fetchNuGet {
-    pname = "System.Drawing.Common";
     version = "7.0.0";
     hash = "sha256-t4FBgTMhuOA5FA23fg0WQOGuH0njV7hJXST/Ln/Znks=";
   })
@@ -1265,11 +1240,6 @@
   })
   (fetchNuGet {
     pname = "System.Security.AccessControl";
-    version = "4.7.0";
-    hash = "sha256-/9ZCPIHLdhzq7OW4UKqTsR0O93jjHd6BRG1SRwgHE1g=";
-  })
-  (fetchNuGet {
-    pname = "System.Security.AccessControl";
     version = "5.0.0";
     hash = "sha256-ueSG+Yn82evxyGBnE49N4D+ngODDXgornlBtQ3Omw54=";
   })
@@ -1380,11 +1350,6 @@
   })
   (fetchNuGet {
     pname = "System.Security.Permissions";
-    version = "4.7.0";
-    hash = "sha256-BGgXMLUi5rxVmmChjIhcXUxisJjvlNToXlyaIbUxw40=";
-  })
-  (fetchNuGet {
-    pname = "System.Security.Permissions";
     version = "7.0.0";
     hash = "sha256-DOFoX+AKRmrkllykHheR8FfUXYx/Ph+I/HYuReQydXI=";
   })
@@ -1405,11 +1370,6 @@
   })
   (fetchNuGet {
     pname = "System.Security.Principal.Windows";
-    version = "4.7.0";
-    hash = "sha256-rWBM2U8Kq3rEdaa1MPZSYOOkbtMGgWyB8iPrpIqmpqg=";
-  })
-  (fetchNuGet {
-    pname = "System.Security.Principal.Windows";
     version = "5.0.0";
     hash = "sha256-CBOQwl9veFkrKK2oU8JFFEiKIh/p+aJO+q9Tc2Q/89Y=";
   })
@@ -1422,11 +1382,6 @@
     pname = "System.Text.Encoding";
     version = "4.3.0";
     hash = "sha256-GctHVGLZAa/rqkBNhsBGnsiWdKyv6VDubYpGkuOkBLg=";
-  })
-  (fetchNuGet {
-    pname = "System.Text.Encoding.CodePages";
-    version = "4.7.1";
-    hash = "sha256-OUA8ttAKGgqD5KUwtnO2OewBF/tJI0nO3YcunK5qMPg=";
   })
   (fetchNuGet {
     pname = "System.Text.Encoding.CodePages";
@@ -1502,11 +1457,6 @@
     pname = "System.Threading.Timer";
     version = "4.3.0";
     hash = "sha256-pmhslmhQhP32TWbBzoITLZ4BoORBqYk25OWbru04p9s=";
-  })
-  (fetchNuGet {
-    pname = "System.Windows.Extensions";
-    version = "4.7.0";
-    hash = "sha256-yW+GvQranReaqPw5ZFv+mSjByQ5y1pRLl05JIEf3tYU=";
   })
   (fetchNuGet {
     pname = "System.Windows.Extensions";
