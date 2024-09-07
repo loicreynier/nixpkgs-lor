@@ -23,12 +23,12 @@ The subsequent packages are no longer being maintained within this repository.
 The last updated derivation of these packages
 can be found in the `./pkgs-old` folder.
 
-- `fira-math`: available in [`nixpkgs/unstable`][fira-math]
+- `fira-math`: available in [`nixpkgs`][fira-math]
 - `gen-license`: available in [`nixpkgs`][gen-license]
-- `gh-f`: available in [`nixpkgs/unstable`][gh-f]
-- `gh-notify`: available in [`nixpkgs/unstable`][gh-notify]
+- `gh-f`: available in [`nixpkgs`][gh-f]
+- `gh-notify`: available in [`nixpkgs`][gh-notify]
 - `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
-- `pdfrw2`: available in [`nixpkgs/unstable`][pdfrw2]
+- `pdfrw2`: available in [`nixpkgs`][pdfrw2]
 - `src-cli`: available in [`nixpkgs`][src-cli]
 
 The others Neovim packages that were removed
@@ -37,13 +37,13 @@ This overlay automatically provides all plugins from [awesome-neovim].
 
 <!-- editorconfig-checker-disable -->
 
-[pdfrw2]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/pdfrw2/default.nix
-[fira-math]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/fi/fira-math/package.nix
-[gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/gen-license/default.nix
-[gh-f]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gh/gh-f/package.nix
-[gh-notify]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gh/gh-notify/package.nix
+[pdfrw2]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/python-modules/pdfrw2/default.nix
+[fira-math]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/fi/fira-math/package.nix
+[gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/tools/gen-license/default.nix
+[gh-f]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/gh/gh-f/package.nix
+[gh-notify]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/gh/gh-notify/package.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
-[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/development/tools/misc/src-cli/default.nix
+[src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/tools/misc/src-cli/default.nix
 [NixNeovimPlugins]: https://github.com/NixNeovim/NixNeovimPlugins
 [awesome-neovim]: https://github.com/rockerBOO/awesome-neovim
 
