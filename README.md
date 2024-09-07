@@ -21,6 +21,7 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `pinentry-wsl-ps1-wsl2-0.2-unstable-2023-03-10`: GUI for GPG within Windows Subsystem for Linux
 - `python3.12-betterbib-7.1.17`: Tool to update BibTeX files with info from online resources
 - `python3.12-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
+- `python3.12-mktestdocs-0.2.1`: Library to run pytest against Markdown files or docstrings
 - `python3.12-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
 - `python3.12-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
 - `python3.12-py-machineid-0.6.0`: Library to get the unique machine ID of any host
