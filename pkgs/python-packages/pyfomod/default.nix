@@ -1,6 +1,5 @@
-{ lib, buildPythonPackage, fetchPypi, poetry-core, pythonOlder
-, # , pytestCheckHook
-lxml, looseversion, }:
+{ lib, buildPythonPackage, fetchPypi, poetry-core, pythonOlder, lxml
+, looseversion, }:
 buildPythonPackage rec {
   pname = "pyfomod";
   version = "1.2.1";
@@ -30,7 +29,7 @@ buildPythonPackage rec {
     description = "High-level Fomod library";
     homepage = "https://pyfomod.readthedocs.io";
     changelog = "https://github.com/GandaG/pyfomod/blob/master/CHANGELOG.md";
-    license = "Apache-2.0";
+    license = licenses.asl20;
     maintainers = with maintainers; [ loicreynier ];
   };
 }

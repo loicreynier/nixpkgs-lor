@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec {
 
     description = "Command line tool for converting between timezones";
     homepage = "https://github.com/mitsuhiko/when";
-    licenses = "Apache-2.0";
+    licenses = licenses.asl20;
     maintainers = with maintainers; [ loicreynier ];
   };
 
