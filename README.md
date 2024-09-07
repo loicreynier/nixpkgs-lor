@@ -24,7 +24,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 - `python3.12-mktestdocs-0.2.1`: Library to run pytest against Markdown files or docstrings
 - `python3.12-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
 - `python3.12-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
-- `python3.12-py-machineid-0.6.0`: Library to get the unique machine ID of any host
 - `python3.12-pyfomod-1.2.1`: High-level Fomod library
 - `python3.12-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
 - `python3.12-x21-0.5.1`
@@ -48,6 +47,7 @@ can be found in the `./pkgs-old` folder.
 - `gh-notify`: available in [`nixpkgs`][gh-notify]
 - `mkdnflow-nvim`: available in [`nixpkgs`][mkdnflow-nvim]
 - `pdfrw2`: available in [`nixpkgs`][pdfrw2]
+- `py-machineid`: available in [`nixpkgs/unstable`][py-machineid]
 - `src-cli`: available in [`nixpkgs`][src-cli]
 
 The others Neovim packages that were removed
@@ -62,6 +62,7 @@ This overlay automatically provides all plugins from [awesome-neovim].
 [gh-f]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/gh/gh-f/package.nix
 [gh-notify]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/gh/gh-notify/package.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
+[py-machineid]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/py-machineid/default.nix
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/tools/misc/src-cli/default.nix
 [NixNeovimPlugins]: https://github.com/NixNeovim/NixNeovimPlugins
 [awesome-neovim]: https://github.com/rockerBOO/awesome-neovim
