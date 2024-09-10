@@ -20,8 +20,6 @@ until they are available on `nixpkgs` or until they are properly packaged.
 <!-- editorconfig-checker-enable -->
 
 The subsequent packages are no longer being maintained within this repository.
-The last updated derivation of these packages
-can be found in the `./pkgs-old` folder.
 
 - `fira-math`: available in [`nixpkgs`][fira-math]
 - `gen-license`: available in [`nixpkgs`][gen-license]
