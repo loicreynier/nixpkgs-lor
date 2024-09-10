@@ -1,5 +1,12 @@
-{ lib, buildPythonPackage, fetchFromGitHub, pytestCheckHook, pythonOlder
-, poetry-core, click }:
+{
+  lib,
+  buildPythonPackage,
+  fetchFromGitHub,
+  pytestCheckHook,
+  pythonOlder,
+  poetry-core,
+  click,
+}:
 
 buildPythonPackage rec {
   pname = "xdg-open-wsl";
@@ -35,11 +42,10 @@ buildPythonPackage rec {
 
   pythonImportsCheck = [ "xdg_open_wsl" ];
 
-  meta = with lib; {
-    description =
-      "xdg-open replacement for WSL that opens files and links using Windows apps";
+  meta = {
+    description = "xdg-open replacement for WSL that opens files and links using Windows apps";
     homepage = "https://github.com/cpbotha/xdg-open-wsl";
-    license = licenses.bsd3;
-    maintainers = with maintainers; [ loicreynier ];
+    license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ loicreynier ];
   };
 }

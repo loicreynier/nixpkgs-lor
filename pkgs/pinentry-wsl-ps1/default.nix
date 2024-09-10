@@ -1,4 +1,11 @@
-{ lib, fetchFromGitHub, gnugrep, iproute2, makeWrapper, stdenv }:
+{
+  lib,
+  fetchFromGitHub,
+  gnugrep,
+  iproute2,
+  makeWrapper,
+  stdenv,
+}:
 stdenv.mkDerivation {
   pname = "pinentry-wsl-ps1";
   version = "0.2-unstable-2022-09-04";
@@ -12,7 +19,10 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ makeWrapper ];
 
-  propagatedBuildInputs = [ gnugrep iproute2 ];
+  propagatedBuildInputs = [
+    gnugrep
+    iproute2
+  ];
 
   installPhase = ''
     src="pinentry-wsl-ps1.sh"
@@ -23,10 +33,10 @@ stdenv.mkDerivation {
     #   --prefix PATH : /mnt/c/Windows/System32/WindowsPowerShell/v1.0
   '';
 
-  meta = with lib; {
+  meta = {
     description = "GUI for GPG within Windows Subsystem for Linux";
     homepage = "https://github.com/diablodale/pinentry-wsl-ps1";
-    license = licenses.mpl20;
-    maintainers = [ maintainers.loicreynier ];
+    license = lib.licenses.mpl20;
+    maintainers = with lib.maintainers; [ loicreynier ];
   };
 }

@@ -1,4 +1,4 @@
-{ fetchFromGitHub, vimUtils, }:
+{ fetchFromGitHub, vimUtils }:
 vimUtils.buildVimPlugin {
   pname = "duck-nvim";
   version = "1.0.0-unstable-2024-03-07";

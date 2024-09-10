@@ -1,4 +1,8 @@
-{ lib, fetchFromGitHub, rustPlatform }:
+{
+  lib,
+  fetchFromGitHub,
+  rustPlatform,
+}:
 
 rustPlatform.buildRustPackage rec {
   pname = "win32yank";
@@ -15,10 +19,10 @@ rustPlatform.buildRustPackage rec {
 
   cargoPatches = [ ./add-cargo-lock.patch ];
 
-  meta = with lib; {
+  meta = {
     description = "Windows clipboard tool";
     homepage = "https://github.com/equalsraf/win32yank";
-    license = licenses.isc;
-    maintainer = with maintainers; [ loicreynier ];
+    license = lib.licenses.isc;
+    maintainer = with lib.maintainers; [ loicreynier ];
   };
 }

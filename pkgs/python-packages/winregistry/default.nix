@@ -1,4 +1,9 @@
-{ lib, buildPythonPackage, fetchPypi, poetry-core }:
+{
+  lib,
+  buildPythonPackage,
+  fetchPypi,
+  poetry-core,
+}:
 
 buildPythonPackage rec {
   pname = "winregistry";
@@ -15,11 +20,10 @@ buildPythonPackage rec {
   # No import checks since it requires `winreg`
   # pythonImportsCheck = [ winregistry ];
 
-  meta = with lib; {
+  meta = {
     description = "Minimal library aimed at working with Windows registry";
     homepage = "https://github.com/shpaker/winregistry";
-    changelog =
-      "https://github.com/shpaker/winregistry/releases/tag/${version}";
-    license = licenses.mit;
+    changelog = "https://github.com/shpaker/winregistry/releases/tag/${version}";
+    license = lib.licenses.mit;
   };
 }

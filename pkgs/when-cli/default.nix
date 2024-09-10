@@ -1,6 +1,9 @@
-{ lib, fetchCrate, rustPlatform }:
+{
+  lib,
+  fetchCrate,
+  rustPlatform,
+}:
 rustPlatform.buildRustPackage rec {
-
   pname = "when-cli";
   version = "0.4.0";
 
@@ -11,12 +14,11 @@ rustPlatform.buildRustPackage rec {
 
   cargoHash = "sha256-9emY0yhAKVzuk1Tlzi0kW8oR9jRqLdg8wbTcJMBrxMw=";
 
-  meta = with lib; {
-
+  meta = {
     description = "Command line tool for converting between timezones";
     homepage = "https://github.com/mitsuhiko/when";
-    licenses = licenses.asl20;
-    maintainers = with maintainers; [ loicreynier ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ loicreynier ];
   };
 
 }

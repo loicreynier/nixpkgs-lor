@@ -1,4 +1,9 @@
-{ lib, fetchFromGitHub, rustPlatform, sqlite }:
+{
+  lib,
+  fetchFromGitHub,
+  rustPlatform,
+  sqlite,
+}:
 
 rustPlatform.buildRustPackage rec {
   pname = "foxmarks";
@@ -15,11 +20,11 @@ rustPlatform.buildRustPackage rec {
 
   buildInputs = [ sqlite ];
 
-  meta = with lib; {
+  meta = {
     description = "CLI read-only interface for Mozilla Firefox's bookmarks";
     homepage = "https://github.com/zer0-x/foxmarks";
-    changelog =
-      "https://github.com/zer0-x/foxmarks/blobl/v${version}/CHANGELOG.md";
-    license = licenses.gpl3;
+    changelog = "https://github.com/zer0-x/foxmarks/blobl/v${version}/CHANGELOG.md";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ loicreynier ];
   };
 }

@@ -10,42 +10,61 @@
     };
   };
 
-  outputs = { self, flake-utils, nixpkgs, git-hooks }:
+  outputs =
+    {
+      self,
+      flake-utils,
+      nixpkgs,
+      git-hooks,
+    }:
     {
       overlays.default = nixpkgs.lib.composeManyExtensions [
-        (final: prev:
+        (
+          final: prev:
           {
             pythonPackagesOverlays = (prev.pythonPackagesOverlays or [ ]) ++ [
-              (python-final: _:
-                { } // import ./pkgs/python-packages { python = python-final; })
+              (python-final: _: { } // import ./pkgs/python-packages { python = python-final; })
             ];
-            python3 = let
-              self = prev.python3.override {
-                inherit self;
-                packageOverrides =
-                  prev.lib.composeManyExtensions final.pythonPackagesOverlays;
-              };
-            in self;
+            python3 =
+              let
+                self = prev.python3.override {
+                  inherit self;
+                  packageOverrides = prev.lib.composeManyExtensions final.pythonPackagesOverlays;
+                };
+              in
+              self;
             python3Packages = final.python3.pkgs;
-            vimPlugins = prev.vimPlugins
-              // import ./pkgs/vim-plugins { pkgs = final; };
-          } // import ./pkgs { pkgs = final; })
+            vimPlugins = prev.vimPlugins // import ./pkgs/vim-plugins { pkgs = final; };
+          }
+          // import ./pkgs { pkgs = final; }
+        )
       ];
-    } // (flake-utils.lib.eachDefaultSystem (system:
+    }
+    // (flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs {
           inherit system;
           overlays = [ self.overlays.default ];
-          config.allowUnfreePredicate = pkg:
+          config.allowUnfreePredicate =
+            pkg:
             builtins.elem (nixpkgs.lib.getName pkg) [
               "betterbib"
               "fzf-obc"
               "plm"
             ];
         };
-        pythonEnv = pkgs.python3.withPackages (ps: with ps; [ black jinja2 ]);
-      in {
-        packages = { } // import ./pkgs { inherit pkgs; }
+        pythonEnv = pkgs.python3.withPackages (
+          ps: with ps; [
+            black
+            jinja2
+          ]
+        );
+      in
+      {
+        packages =
+          { }
+          // import ./pkgs { inherit pkgs; }
           // import ./pkgs/python-packages { python = pkgs.python3Packages; }
           // import ./pkgs/vim-plugins { inherit pkgs; };
 
@@ -67,9 +86,12 @@
               deadnix.enable = true;
               editorconfig-checker = {
                 enable = true;
-                excludes = [ "flake.lock" "deps.nix" ];
+                excludes = [
+                  "flake.lock"
+                  "deps.nix"
+                ];
               };
-              nixfmt.enable = true;
+              nixfmt-rfc-style.enable = true;
               ruff.enable = true;
               prettier = {
                 enable = true;
@@ -94,5 +116,6 @@
           ];
           inherit (self.checks.${system}.pre-commit-check) shellHook;
         };
-      }));
+      }
+    ));
 }

@@ -10,4 +10,3 @@ vimUtils.buildVimPlugin rec {
   };
   meta.homepage = "https://github.com/vim-scripts/bbcode";
 }
-

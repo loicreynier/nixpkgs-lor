@@ -1,5 +1,12 @@
-{ lib, buildPythonPackage, fetchPypi, poetry-core, pythonOlder, lxml
-, looseversion, }:
+{
+  lib,
+  buildPythonPackage,
+  fetchPypi,
+  poetry-core,
+  pythonOlder,
+  lxml,
+  looseversion,
+}:
 buildPythonPackage rec {
   pname = "pyfomod";
   version = "1.2.1";
@@ -13,10 +20,15 @@ buildPythonPackage rec {
 
   build-system = [ poetry-core ];
 
-  patches =
-    [ ./update-pyproject.patch ./python-312-distutils-looseversion.patch ];
+  patches = [
+    ./update-pyproject.patch
+    ./python-312-distutils-looseversion.patch
+  ];
 
-  dependencies = [ lxml looseversion ];
+  dependencies = [
+    lxml
+    looseversion
+  ];
 
   # Tests are not uploaded to PyPi. TODO: fetch from GitHub
   # nativeCheckInputs = [
@@ -25,11 +37,11 @@ buildPythonPackage rec {
 
   pythonImportsCheck = [ "pyfomod" ];
 
-  meta = with lib; {
+  meta = {
     description = "High-level Fomod library";
     homepage = "https://pyfomod.readthedocs.io";
     changelog = "https://github.com/GandaG/pyfomod/blob/master/CHANGELOG.md";
-    license = licenses.asl20;
-    maintainers = with maintainers; [ loicreynier ];
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ loicreynier ];
   };
 }
