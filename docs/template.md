@@ -6,8 +6,8 @@ Personal Nix package collection.
 
 This is a personal collection of Nix packages that
 I will pull (or have pulled) to [`nixpkgs`][nixpkgs].
-I use this Flake to install packages to my environments
-until they are available on `nixpkgs` or until they are properly packaged.
+I use this Flake to install packages in my environments
+until they are available in `nixpkgs` or until they are properly packaged.
 
 [nixpkgs]: https://github.com/NixOS/nixpkgs
 
