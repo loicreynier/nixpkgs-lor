@@ -29,6 +29,7 @@ The subsequent packages are no longer being maintained within this repository.
 - `pdfrw2`: available in [`nixpkgs`][pdfrw2]
 - `py-machineid`: available in [`nixpkgs/unstable`][py-machineid]
 - `src-cli`: available in [`nixpkgs`][src-cli]
+- `when-cli`: available in [`nixpkgs/master`][when-cli]
 
 The others Neovim packages that were removed
 are available in [NixNeovimPlugins].
@@ -44,6 +45,7 @@ This overlay automatically provides all plugins from [awesome-neovim].
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
 [py-machineid]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/py-machineid/default.nix
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/tools/misc/src-cli/default.nix
+[when-cli]: https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/wh/when-cli/package.nix
 [NixNeovimPlugins]: https://github.com/NixNeovim/NixNeovimPlugins
 [awesome-neovim]: https://github.com/rockerBOO/awesome-neovim
 

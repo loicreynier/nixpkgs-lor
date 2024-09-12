@@ -1,6 +1,7 @@
 { pkgs }:
 
-with pkgs; {
+with pkgs;
+{
   foxmarks = callPackage ./foxmarks { };
   goto = callPackage ./goto { };
   pinentry-wsl-ps1 = callPackage ./pinentry-wsl-ps1 { };
@@ -8,5 +9,4 @@ with pkgs; {
   spriggit = callPackage ./spriggit { };
   # win32yank = callPackage ./win32yank { }; # Can't compile on Nix/Linux
   win32yank-bin = callPackage ./win32yank/bin.nix { };
-  when-cli = callPackage ./when-cli { };
 }
