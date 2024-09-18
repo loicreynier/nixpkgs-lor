@@ -1,5 +1,6 @@
 { python }:
-with python; {
+with python;
+{
   betterbib = callPackage ./betterbib { };
   dmsuite = callPackage ./dmsuite { };
   mobase-stubs = callPackage ./mobase-stubs { };
