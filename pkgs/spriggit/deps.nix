@@ -295,38 +295,38 @@
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-iTLjqOWRId6Us3iDeaNAUI8pT6Ukk15BNuCR0EyUprc=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-BW7d1OXN/ZhRWXb34kwXKHJ0gHtwf9FmuMempsbjyT8=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Core";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-OY2opsriyd+N46XYPYSMvMTiS3A8U85lgNMKJIBP9Kc=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-2VR1P09pjyl5Y8ivSV3euciFH5Mnm+ut8RSznGXowEA=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Fallout4";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-NLcnGZThJG+Up8HTVlCWXDmZioPrnC2Njik+DKi7o7E=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-TVOjepdZyJwbszshJ9s13epCWxRlnIY2jnPMB9THtEo=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Kernel";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-EfA+wUmsrxUd5y3WPmdMM6IPkGnROYLm8ahZiUfPz6w=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-o/c80hzaGc1z7GppElXQoKtJMSYrWDqYYxgaeAzQxv0=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Oblivion";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-zoPHtTyiZcT2l7A7Ty+rOQzQe3Yc9ZHVR9YjuAd+Pm4=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-sV2PwXKjRwMJzzvAfgcfcvgQWKFPSFdW/RepbtNqbYM=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Skyrim";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-eFScjcMvnSahImQW0AOSLtlLvo3o0asq+HVcAgOfktk=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-SJvw96FObGbETZZ5czoXuY6yU+zV88GipoXkcwBhD8Q=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Starfield";
-    version = "0.46.0.1-nightly-20240916-072006";
-    hash = "sha256-yeEyClPqceAZagTLIXBvHB+BzWZ2uASrscka5AmS4MI=";
+    version = "0.46.0.1-nightly-20240906-214363";
+    hash = "sha256-QRyLXRZeGtM0X7hfWAYwoIlBgHFzM2WRijxcEDGTAEU=";
   })
   (fetchNuGet {
     pname = "NETStandard.Library";
