@@ -8,12 +8,12 @@
 }:
 buildDotnetModule rec {
   pname = "spriggit-cli";
-  version = "0.30";
+  version = "0.34";
   src = fetchFromGitHub {
     owner = "Mutagen-Modding";
     repo = "Spriggit";
     rev = version;
-    hash = "sha256-j+uoYj24GRRblbia0o8oUcJE/81036/IBs0ovhn2DI4=";
+    hash = "sha256-r7zzLQ1Vo96uQLJTvgsqqMsOb+1x0I5IGebVqRGlMGA=";
   };
 
   projectFile = "Spriggit.CLI/Spriggit.CLI.csproj";
