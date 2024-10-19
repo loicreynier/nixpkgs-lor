@@ -22,6 +22,7 @@ until they are available in `nixpkgs` or until they are properly packaged.
 The subsequent packages are no longer being maintained within this repository.
 
 - `fira-math`: available in [`nixpkgs`][fira-math]
+- `foxmarks`: available in [`nixpkgs/master`][foxmarks]
 - `gen-license`: available in [`nixpkgs`][gen-license]
 - `gh-f`: available in [`nixpkgs`][gh-f]
 - `gh-notify`: available in [`nixpkgs`][gh-notify]
@@ -29,7 +30,7 @@ The subsequent packages are no longer being maintained within this repository.
 - `pdfrw2`: available in [`nixpkgs`][pdfrw2]
 - `py-machineid`: available in [`nixpkgs/unstable`][py-machineid]
 - `src-cli`: available in [`nixpkgs`][src-cli]
-- `when-cli`: available in [`nixpkgs/master`][when-cli]
+- `when-cli`: available in [`nixpkgs/unstable`][when-cli]
 
 The others Neovim packages that were removed
 are available in [NixNeovimPlugins].
@@ -39,13 +40,14 @@ This overlay automatically provides all plugins from [awesome-neovim].
 
 [pdfrw2]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/python-modules/pdfrw2/default.nix
 [fira-math]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/fi/fira-math/package.nix
+[foxmarks]: https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/fo/foxmarks/package.nix
 [gen-license]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/tools/gen-license/default.nix
 [gh-f]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/gh/gh-f/package.nix
 [gh-notify]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/by-name/gh/gh-notify/package.nix
 [mkdnflow-nvim]: https://github.com/NixOS/nixpkgs/blob/d65bceaee0fb1e64363f7871bc43dc1c6ecad99f/pkgs/applications/editors/vim/plugins/generated.nix#L5583
 [py-machineid]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/development/python-modules/py-machineid/default.nix
 [src-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/development/tools/misc/src-cli/default.nix
-[when-cli]: https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/wh/when-cli/package.nix
+[when-cli]: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/wh/when-cli/package.nix
 [NixNeovimPlugins]: https://github.com/NixNeovim/NixNeovimPlugins
 [awesome-neovim]: https://github.com/rockerBOO/awesome-neovim
 
