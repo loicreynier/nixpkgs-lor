@@ -120,8 +120,8 @@
   })
   (fetchNuGet {
     pname = "Loqui";
-    version = "2.64.1";
-    hash = "sha256-EOKnO1v+80BDfl1AtOT+BFt0/wDDx+hDYEmSKINmVLk=";
+    version = "2.66.0";
+    hash = "sha256-JaG/bYTGfBmhR1ojA79iEuu4S4J6DQZcNXaEu8u2lKs=";
   })
   (fetchNuGet {
     pname = "McMaster.NETCore.Plugins";
@@ -295,38 +295,38 @@
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda";
-    version = "0.47.2";
-    hash = "sha256-41aGZHl2OrCr5gU0lflo0V0skYY0Jt4aWCxgv/oGnMg=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-nO5ulkN2P630E3QsjauZS5/NvUsqJWHwecIqY0z9vh8=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Core";
-    version = "0.47.2";
-    hash = "sha256-+2QINNwHldfbuNllNgI3JYGeCtGtvGZyqnGpAzwFjQA=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-NzFzFiMNdk+z3/BYHNX4HnOTrdC65CrfbFkdH8sLDY8=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Fallout4";
-    version = "0.47.2";
-    hash = "sha256-SAP73TfwEzTFzxxBRoczgh4S4ZNw6bg6H0zVn159D0Q=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-/FTbMrYBB6v5ydDj9ReTzQN1FiNE0Khihz25qXaEM4w=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Kernel";
-    version = "0.47.2";
-    hash = "sha256-lEA5pP1owhZtJ4rE16sA8AS579Bv7uAfPzr/XaggKdY=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-hl+UDwSNrboJ8dPwo/TBBtc4FU282g5asGVw+ahYM8s=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Oblivion";
-    version = "0.47.2";
-    hash = "sha256-Lm/LfqH5Fp/vkQEwAFcA8QocFyempOGfGPMc94BSti0=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-lWEkYCxla7w6qOALwt5IU9ASWG/KK3yQC3rM2sAqH5Q=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Skyrim";
-    version = "0.47.2";
-    hash = "sha256-/Ag7/BJS5GxMdmqhHJEIK8eksTGsqZdGYJDQG/Z6kQ0=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-GX60DX341k3Mjqbm+0mS0D1guUQ7hV43vtKnVUZWo0c=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Starfield";
-    version = "0.47.2";
-    hash = "sha256-i2ATsEnZQEiYtDiCj272sa351OlaBiUiD/zTMlB1Rxc=";
+    version = "0.47.4-nightly-20241021-052369";
+    hash = "sha256-pml9ClD0Te4OhxHdlaxLbgl4vKvOcl4+rufOe7AMhiY=";
   })
   (fetchNuGet {
     pname = "NETStandard.Library";
@@ -350,8 +350,8 @@
   })
   (fetchNuGet {
     pname = "Noggog.Autofac";
-    version = "2.65.1-nightly-20241003-194820";
-    hash = "sha256-zY+IDvt4vxTL54gYs47owJJ7uS7zuImrU2qpK1KLqJQ=";
+    version = "2.65.1-nightly-20241010-092782";
+    hash = "sha256-+ZuJIASEouzJo3sy23T+1cYhtJOCu7DaVH4CGTAfcuw=";
   })
   (fetchNuGet {
     pname = "Noggog.CSharpExt";
@@ -360,8 +360,8 @@
   })
   (fetchNuGet {
     pname = "Noggog.CSharpExt";
-    version = "2.65.1-nightly-20241003-194820";
-    hash = "sha256-k5uPcsQAptGQwzQPjKWkUVZVWF29rhAlnIstlnzcUq4=";
+    version = "2.65.1-nightly-20241010-092782";
+    hash = "sha256-9Z+Lj5FC6PYs9Bfj7GHi1WgodWpCFm16yylH8GldVys=";
   })
   (fetchNuGet {
     pname = "Noggog.GitRepository";
@@ -370,13 +370,13 @@
   })
   (fetchNuGet {
     pname = "Noggog.SourceGenerators";
-    version = "2.65.1-nightly-20241003-194820";
-    hash = "sha256-eq6gt6ps9ihTCTHZnZT+YuDqf3gwY37SaYxct6Wn1Ec=";
+    version = "2.65.1-nightly-20241010-092782";
+    hash = "sha256-H7X9BwMG70hxVL9tpupeuPnpV0cCAKLKTB1luev8goY=";
   })
   (fetchNuGet {
     pname = "Noggog.Testing";
-    version = "2.65.1-nightly-20241003-194820";
-    hash = "sha256-a4lALd1eX1o2hQoTS6TY8hBeKN3Sfo4TdqMJY+jEcrs=";
+    version = "2.65.1-nightly-20241010-092782";
+    hash = "sha256-rhm+32/ks4xsERPokjJ6uFGPGETsSAntGv7PBLcIDzY=";
   })
   (fetchNuGet {
     pname = "NSubstitute";
