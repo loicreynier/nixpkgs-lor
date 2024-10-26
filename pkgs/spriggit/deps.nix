@@ -295,38 +295,38 @@
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-nO5ulkN2P630E3QsjauZS5/NvUsqJWHwecIqY0z9vh8=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-/ZARiYItdYh27ZZ7W5Iw44M8q+iy7KraRY7GsEXiGZc=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Core";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-NzFzFiMNdk+z3/BYHNX4HnOTrdC65CrfbFkdH8sLDY8=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-VSuDG9kcX9HOZQvQ6rF/ucvwDmM2gFWoZY36B1pEIg4=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Fallout4";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-/FTbMrYBB6v5ydDj9ReTzQN1FiNE0Khihz25qXaEM4w=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-F1RFhkB76UCZgp/d91djl72mf9/J84gun5+wU1uzGAs=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Kernel";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-hl+UDwSNrboJ8dPwo/TBBtc4FU282g5asGVw+ahYM8s=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-GD1Tl/uWCm3F2AIYG8MQ1GYbIM2VK1ezjWj10k7LDr4=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Oblivion";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-lWEkYCxla7w6qOALwt5IU9ASWG/KK3yQC3rM2sAqH5Q=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-zT4VRdnoWhOO3El5aea2gQD0O8rCKkNhXnXOOQjjL+M=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Skyrim";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-GX60DX341k3Mjqbm+0mS0D1guUQ7hV43vtKnVUZWo0c=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-lFBEXhEk0Nc76Bogl1wJHWhRgjkdx4HIsrMYMzTcRyQ=";
   })
   (fetchNuGet {
     pname = "Mutagen.Bethesda.Starfield";
-    version = "0.47.4-nightly-20241021-052369";
-    hash = "sha256-pml9ClD0Te4OhxHdlaxLbgl4vKvOcl4+rufOe7AMhiY=";
+    version = "0.47.4-nightly-20241025-100180";
+    hash = "sha256-LfH0YPrjV+YUXyc/VqVqxd/wrM4qiL5uhnMXg0uc5FI=";
   })
   (fetchNuGet {
     pname = "NETStandard.Library";
