@@ -1,6 +1,6 @@
 { fetchFromGitHub, vimUtils }:
 vimUtils.buildVimPlugin {
-  pname = "duck-nvim";
+  pname = "duck.nvim";
   version = "1.0.0-unstable-2024-03-07";
   src = fetchFromGitHub {
     owner = "tamton-aquib";
