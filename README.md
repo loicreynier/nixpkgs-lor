@@ -23,7 +23,7 @@ until they are available in `nixpkgs` or until they are properly packaged.
 - `python3.12-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
 - `python3.12-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
 - `python3.12-pyfomod-1.2.1`: High-level Fomod library
-- `python3.12-winregistry-1.1.1`: Minimal library aimed at working with Windows registry
+- `python3.12-winregistry-2.1.0`: Minimal library aimed at working with Windows registry
 - `python3.12-x21-0.5.1`
 - `python3.12-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `spriggit-cli-0.35.1`: Tool to facilitate converting Bethesda plugin files to a text based format that can be stored in Git

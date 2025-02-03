@@ -7,12 +7,12 @@
 
 buildPythonPackage rec {
   pname = "winregistry";
-  version = "1.1.1";
+  version = "2.1.0";
   pyproject = true;
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-lC/srTdRwbeLnmsKUgJmkDwwI/EEZozhvb84HsmTrYs=";
+    hash = "sha256-NwwocvnPmlEu00QDnvriopQ+s2NVvIZzNv8Eng+dHbQ=";
   };
 
   build-system = [ poetry-core ];
