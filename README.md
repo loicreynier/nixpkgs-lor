@@ -15,6 +15,7 @@ until they are available in `nixpkgs` or until they are properly packaged.
 
 <!-- editorconfig-checker-disable -->
 
+- `fzf-tab-completion-0-unstable-2025-01-20`: Tab completion using fzf for Bash, zsh and readline applications
 - `goto-2.1.0`: Shell utility allowing users to navigate to aliased directories
 - `pinentry-wsl-ps1-0.2-unstable-2022-09-04`: GUI for GPG within Windows Subsystem for Linux
 - `pinentry-wsl-ps1-wsl2-0.2-unstable-2023-03-10`: GUI for GPG within Windows Subsystem for Linux

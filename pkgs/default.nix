@@ -2,6 +2,7 @@
 
 with pkgs;
 {
+  fzf-tab-completion = callPackage ./fzf-tab-completion { };
   goto = callPackage ./goto { };
   pinentry-wsl-ps1 = callPackage ./pinentry-wsl-ps1 { };
   pinentry-wsl-ps1-wsl2 = callPackage ./pinentry-wsl-ps1/wsl-2.nix { };
