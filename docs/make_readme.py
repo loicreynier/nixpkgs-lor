@@ -6,6 +6,7 @@ __author__ = ["Loïc Reynier <loic+dev@loicreynier.fr>"]
 __version__ = "0.1.1"
 __changelog__ = {
     "0.1.1": "Raise error if description ends with a period",
+    "0.1.2": "Update empty description exception catching",
 }
 
 import json
@@ -41,7 +42,11 @@ def package_list(packages: dict) -> str:
                     f"{name}: Package description should not end with a period."
                 )
             list_.append(f"`{name}`: {desc}")
-        except KeyError:
+        # desc[-1] -> IndexError if empty, old Nix -> no desc key
+        except (
+            KeyError,
+            IndexError,
+        ):
             list_.append(f"`{name}`")
     # Sort, add list indents and convert to string
     return "\n".join([f"- {s}" for s in sorted(list_)])
