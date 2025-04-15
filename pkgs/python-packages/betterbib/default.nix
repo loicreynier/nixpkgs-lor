@@ -16,14 +16,14 @@
 
 buildPythonPackage rec {
   pname = "betterbib";
-  version = "7.1.17";
+  version = "7.5.16";
   format = "wheel";
 
   src = fetchPypi {
     inherit pname version format;
     python = "py3";
     dist = "py3";
-    hash = "sha256-ibp9l9nyzmyJ7J8x0y6H4mI0+IIYeG0Vv657AGJtMTE=";
+    hash = "sha256-DjXW7pXfhTwLtZa/FOeHDQ8nFTfhpWvn9RwChw2cS+s=";
   };
 
   dependencies = [
