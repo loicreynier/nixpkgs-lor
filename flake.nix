@@ -21,19 +21,25 @@
       overlays.default = nixpkgs.lib.composeManyExtensions [
         (
           final: prev:
+          let
+            # Define Python overlay to apply to any Python version
+            pythonOverlay = python-final: _: { } // import ./pkgs/python-packages { python = python-final; };
+            pythonPackagesOverlays = (prev.pythonPackagesOverlays or [ ]) ++ [ pythonOverlay ];
+            # Helper to override a Python version
+            overridePython =
+              python:
+              python.override {
+                packageOverrides = prev.lib.composeManyExtensions pythonPackagesOverlays;
+              };
+          in
           {
             pythonPackagesOverlays = (prev.pythonPackagesOverlays or [ ]) ++ [
               (python-final: _: { } // import ./pkgs/python-packages { python = python-final; })
             ];
-            python3 =
-              let
-                self = prev.python3.override {
-                  inherit self;
-                  packageOverrides = prev.lib.composeManyExtensions final.pythonPackagesOverlays;
-                };
-              in
-              self;
+            python3 = overridePython prev.python3;
             python3Packages = final.python3.pkgs;
+            python311 = overridePython prev.python311;
+            python311Packages = final.python311.pkgs;
             vimPlugins = prev.vimPlugins // import ./pkgs/vim-plugins { pkgs = final; };
           }
           // import ./pkgs { pkgs = final; }
