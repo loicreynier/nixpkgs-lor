@@ -3,6 +3,7 @@
 pinentry-wsl-ps1.overrideAttrs (oldAttrs: {
   pname = oldAttrs.pname + "-wsl2";
   version = "0.2-unstable-2023-03-10";
+  __intentionallyOverridingVersion = true;
 
   patches = [
     # WSL 2 systemd patch
