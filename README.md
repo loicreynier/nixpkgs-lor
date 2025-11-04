@@ -15,18 +15,19 @@ until they are available in `nixpkgs` or until they are properly packaged.
 
 <!-- editorconfig-checker-disable -->
 
+- `dotnet-gitversion-5.12.0`: From git log to SemVer in no time
 - `fzf-tab-completion-0-unstable-2025-01-20`: Tab completion using fzf for Bash, zsh and readline applications
 - `goto-2.1.0`: Shell utility allowing users to navigate to aliased directories
 - `pinentry-wsl-ps1-0.2-unstable-2022-09-04`: GUI for GPG within Windows Subsystem for Linux
 - `pinentry-wsl-ps1-wsl2-0.2-unstable-2023-03-10`: GUI for GPG within Windows Subsystem for Linux
-- `python3.12-betterbib-7.5.16`: Tool to update BibTeX files with info from online resources
-- `python3.12-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
-- `python3.12-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
-- `python3.12-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
-- `python3.12-pyfomod-1.2.1`: High-level Fomod library
-- `python3.12-winregistry-2.1.0`: Minimal library aimed at working with Windows registry
-- `python3.12-x21-0.5.1`
-- `python3.12-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
+- `python3.13-betterbib-7.5.16`: Tool to update BibTeX files with info from online resources
+- `python3.13-dmsuite-0.3.0`: Scientific library providing a collection of spectral collocation differentiation matrices
+- `python3.13-mobase-stubs-2.4.0`: Typing stubs for MO2 Python API
+- `python3.13-plm-0.2.11`: Command-line tool and library that managers your Python software licenses
+- `python3.13-pyfomod-1.2.1`: High-level Fomod library
+- `python3.13-winregistry-2.1.0`: Minimal library aimed at working with Windows registry
+- `python3.13-x21-0.5.1`
+- `python3.13-xdg-open-wsl-2022-04-16`: xdg-open replacement for WSL that opens files and links using Windows apps
 - `spriggit-cli-0.35.1`: Tool to facilitate converting Bethesda plugin files to a text based format that can be stored in Git
 - `vimplugin-duck.nvim-1.0.0-unstable-2024-03-07`
 - `vimplugin-git-rebase-auto-diff.nvim-0-unstable-2023-05-24`
