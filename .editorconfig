@@ -19,7 +19,7 @@ max_line_length = 100
 indent_size = 4
 max_line_length = 88
 
-[*.nix]
+[*.{nix,json}]
 max_line_length = unset
 
 [Justfile]

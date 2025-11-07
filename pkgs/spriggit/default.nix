@@ -4,6 +4,7 @@
   fetchFromGitHub,
   dotnetCorePackages,
   git,
+  gitversion,
   icu,
 }:
 buildDotnetModule rec {
@@ -17,13 +18,16 @@ buildDotnetModule rec {
   };
 
   projectFile = "Spriggit.CLI/Spriggit.CLI.csproj";
-  nugetDeps = ./deps.nix; # To update: `nix build .#spriggit.passthru.fetch-deps && ./result pkgs/spriggit/deps.nix`
+  nugetDeps = ./deps.json; # To update: `nix build .#spriggit.passthru.fetch-deps && ./result pkgs/spriggit/deps.nix`
   dotnet-sdk = with dotnetCorePackages; combinePackages [ sdk_8_0 ];
   dotnet-runtime = dotnetCorePackages.runtime_8_0;
   runtimeDeps = [ icu ];
   executables = [ "Spriggit.CLI" ];
 
-  nativeBuildInputs = [ git ];
+  nativeBuildInputs = [
+    git
+    gitversion
+  ];
 
   meta = {
     description = "Tool to facilitate converting Bethesda plugin files to a text based format that can be stored in Git";
